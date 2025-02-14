@@ -116,6 +116,10 @@ footer {
 }
 
 /* Aboust us section */
+#aboutus-firstline {
+    margin-top: 8rem;
+}
+
 #aboutus-h3 {
     margin-left: 4rem;
 }
@@ -149,6 +153,7 @@ footer {
     box-shadow: black 0 0 11px 1px;
     border-radius: 10px;
     text-align: center;
+    margin-top: 8rem;
 }
 
 #contactus-div input, #contactus-div textarea {
@@ -225,7 +230,7 @@ footer {
     color: black;
     border-radius: 20px;
     box-shadow: 0 4px 20px 0px black;
-    margin: 20px 0;
+    margin: 28px 0 20px 0;
     padding: 2px 8px 25px 8px;
     text-align: center;
 }
