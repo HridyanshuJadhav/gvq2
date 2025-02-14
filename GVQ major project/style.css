@@ -1,0 +1,288 @@
+/* Home page section */
+body {
+    height:100%;
+    font-family:'poppins',sans-serif;
+    color: white;
+    background: linear-gradient(135deg,#2193b0 50%,#6dd5ed 50% );
+    background-attachment: fixed;
+}
+nav {
+    position: fixed;
+    margin-top:-9rem;
+    padding:3px;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-left:-10px;
+   
+}
+
+#navp1 {
+     text-align: center;
+     font-weight: bold;
+}
+
+#navdiv{
+    height:30px;
+    font-size: 15px; 
+    display:flex;
+    justify-content: space-evenly;
+    
+}
+
+#gvq-logo {
+    height: 45px;
+    margin-top:-30px;
+    margin-left:-30px;
+
+}
+#gvq-text {
+    font-weight: 500;
+    margin-left: -40px;
+    font-size: 25px;
+    margin-top: -27px;
+    
+}
+.nav-element {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-element:hover {
+    color: #ff5722;
+}
+#home-text {
+ margin-top: 0rem;}
+
+#home-welcome {
+    margin-top: 10%;
+    font-size: 3vw;
+    display: flex; 
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+#home-p1, #home-p2, #home-p3, #home-p4 {
+    display: flex; 
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+#home-p1 {
+    margin-top: 1%;
+}
+
+#home-p2 {
+    margin-top: -1%;
+}  
+
+
+
+#home-button { 
+    background-color: white;
+    margin-top:8vh ;
+    margin-left:45%;
+    padding: 1% 2% 1% 2%;
+    border: none;
+    border-radius:5px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-bottom: 121px;
+    
+}
+
+footer {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 0px;
+    padding-bottom: 5px;
+    margin-left:-1%;
+    margin-right:-1%;
+    margin-bottom:-2px;
+}   
+
+#home-p4 {
+    margin-top: -1%; 
+}
+
+#home-button:hover {
+    background-color:#ff5722;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Aboust us section */
+#aboutus-h3 {
+    margin-left: 4rem;
+}
+
+#aboutus-ourmission {
+    display: flex;
+    text-shadow: 0 0 20px black;
+}
+  
+#aboutus-letsgrowtogether {
+    display: flex;
+    text-shadow: 0 0 20px black;
+}
+  
+#aboutus-missionimage {
+    height: 50rem;
+    margin-right: 2rem;
+}
+  
+#aboutus-letsgo_text {
+    margin-right: 2rem;
+}
+
+/* Contact us section */
+#contactus-div {
+    max-width: 600px;
+    padding: 20px;
+    margin: 50px auto;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: black 0 0 11px 1px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#contactus-div input, #contactus-div textarea {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 1rem;
+}
+
+#contactus-div textarea {
+    resize: none;
+    overflow-y: scroll;
+}
+
+#contactus-div button {
+    background: #ff5722;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+    padding: 12px 20px;
+}
+
+#contactus-div button:hover {
+    background: #e64a19;
+    transform: scale(1.05);
+}
+
+#contactus-div h3 {
+    color: white;
+    margin-bottom: 0px;
+}
+
+#contactus-div a, .fa-brands{
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+    font-size: 17px;
+    display: inline-block;
+}
+
+#contactus-div a:hover, .fa-brands:hover {
+    color: #ff5722;
+    transform: scale(1.09);
+}
+
+/* Feedback section */
+
+
+/* Help section */
+
+
+/* Login signup section */
+
+#login_body{
+    background-color: white;
+    display:flex;
+}
+
+#login-div2{
+    width:60%;
+}
+#login-div3{
+    width:40%;
+}
+
+
+
+/* Personal dashboard section */
+#pd-div1 {
+    background: white;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px 0px black;
+    margin: 20px 0;
+    padding: 2px 8px 25px 8px;
+    text-align: center;
+}
+
+#pd-name {
+    font-size: 20px;
+    margin-bottom: -15px;
+}
+
+#pd-div1 table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+#pd-div1 th {
+    background-color: #2193b0;
+    color: white;
+    height: 3rem;
+}
+
+#pd-div1 th:nth-child(1) {
+    width: 10%;
+}
+#pd-div1 th:nth-child(2) {
+    width: 50%;
+}
+#pd-div1 th:nth-child(3) {
+    width: 20%;
+}
+#pd-div1 th:nth-child(4) {
+    width: 20%;
+}
+
+#pd-div1 td {
+    height: 2rem;
+}
+
+#pd-div1 table, #pd-div1 th, #pd-div1 td {
+    border: 1px solid #c9c9c9;
+}
+
+#pd-div1 button {
+    background: #ff5722;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+    padding: 12px 20px;
+    margin-top: 10px;
+}
+
+#pd-div1 button:hover {
+    background: #e64a19;
+    transform: scale(1.05);
+}
+
+/* Start category section */
