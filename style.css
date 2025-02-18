@@ -93,7 +93,10 @@ nav {
     margin-bottom: 121px;
     
 }
-
+#confetti{
+    height:1px;
+    width:1px;
+    background color:red}
 footer {
     color: white;
     font-size: 18px;
