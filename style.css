@@ -7,17 +7,18 @@ body {
     background-attachment: fixed;
 }
 nav {
-     position: fixed; 
-     top:0; 
-     margin-top:-9rem; 
-     padding:3px; 
+      position: fixed;  
+      top:0;  
+      margin-top:-0.9rem;  
     width:100%;
     background-color: rgba(0, 0, 0, 0.6);
-    margin-left:-10px;
+     margin-left:-8px; 
+    margin-right: -2px;
    
 }
 
 #navp1 {
+     
      text-align: center;
      font-weight: bold;
 }
@@ -33,12 +34,12 @@ nav {
 #gvq-logo {
     height: 45px;
     margin-top:-30px;
-    margin-left:-30px;
+    margin-left:-55px;
 
 }
 #gvq-text {
     font-weight: 500;
-    margin-left: -40px;
+    margin-left: -60px;
     font-size: 25px;
     margin-top: -27px;
     
@@ -77,9 +78,6 @@ nav {
 #home-p2 {
     margin-top: -1%;
 }  
-
-
-
 #home-button { 
     background-color: white;
     margin-top:8vh ;
@@ -90,13 +88,59 @@ nav {
     text-decoration: none;
     color: black;
     display: block;
-    margin-bottom: 121px;
+   
     
 }
-#confetti{
-    height:1px;
-    width:1px;
-    background color:red;}
+#home-p4 {
+    margin-top: -1%; 
+}
+
+#home-button:hover {
+    background-color:#ff5722;
+    color: white;
+    transform: scale(1.1);
+} 
+.confetti {
+    height: 5px;
+    width: 5px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 150px;
+    animation: drop;
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards; 
+    margin-left: 20%;
+    z-index: -1;
+ }
+ #confetti1 {
+    background-color: rgb(143, 236, 145);
+    animation-delay: 1s;
+ }
+ 
+ #confetti2 {
+     background-color: rgb(228, 49, 49);
+     animation-delay: 2s;
+  }
+  
+  #confetti3 {
+     background-color: rgb(211, 237, 13);
+     animation-delay: 1.5s;
+  }
+  
+  #confetti4 {
+     background-color: rgb(177, 39, 119);
+     animation-delay: 2.5s;
+  }
+@keyframes drop{
+    from {  top:0px;
+         }
+    to {
+        top: 200px;
+    }
+   }
+
+
 footer {
     color: white;
     font-size: 18px;
@@ -109,15 +153,6 @@ footer {
     margin-bottom:-2px;
 }   
 
-#home-p4 {
-    margin-top: -1%; 
-}
-
-#home-button:hover {
-    background-color:#ff5722;
-    color: white;
-    transform: scale(1.1);
-}
 
 /* Aboust us section */
 #aboutus-firstline {
