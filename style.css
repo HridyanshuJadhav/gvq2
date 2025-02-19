@@ -113,7 +113,7 @@ nav {
     margin-left: 16.5%;
     z-index: -1;
  }
- #confetti1 {
+#confetti1 {
     background-color: rgb(143, 236, 145);
     animation-delay: 1s;
  }
@@ -130,12 +130,12 @@ nav {
   
   #confetti4 {
      background-color: rgb(177, 39, 119);
-     animation-delay: 2.5s;
-  }
-  #confetti5 {
-     background-color: blue;
      animation-delay: 2s;
   }
+  #confetti5 {
+    background-color: rgb(159, 86, 177);
+    animation-delay: 2.5s;
+ }
 @keyframes drop{
     from {  top:0px;
          }
