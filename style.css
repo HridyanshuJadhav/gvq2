@@ -439,6 +439,9 @@ button:hover{
 }
 
 /* Start category section */
+*{
+    box-sizing: border-box;
+
 body {
     height:100%;
     font-family:'poppins',sans-serif;
