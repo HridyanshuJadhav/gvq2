@@ -438,11 +438,7 @@ button:hover{
     transform: scale(1.05);
 }
 
-/* Start category section */
-*{
-    box-sizing: border-box;
-}
-
+/* Start category section*/
 body {
     height:100%;
     font-family:'poppins',sans-serif;
