@@ -88,13 +88,13 @@ nav {
     text-decoration: none;
     color: black;
     display: block;
-    
-   }
+ }
 #home-p4 {
     margin-top: -1%; 
 }
 
 #home-button:hover {
+    text-decoration: none;
     background-color:#ff5722;
     color: white;
     transform: scale(1.1);
@@ -109,37 +109,43 @@ nav {
     animation-duration: 5s; 
     animation-iteration-count: infinite;
     animation-fill-mode: forwards; 
-    margin-left: 16.5%;
     z-index: -1;
  }
 #confetti1 {
     background-color: rgb(143, 236, 145);
     animation-delay: 1s;
+    left: 16.5%;
  }
  
  #confetti2 {
      background-color: rgb(228, 49, 49);
      animation-delay: 3s;
+     left: 33%;
   }
   
   #confetti3 {
      background-color: rgb(211, 237, 13);
      animation-delay: 1.5s;
+      left: 49.5%;
   }
   
   #confetti4 {
      background-color: rgb(177, 39, 119);
      animation-delay: 2s;
+      left: 66%;
   }
   #confetti5 {
     background-color: rgb(159, 86, 177);
     animation-delay: 2.5s;
+      left: 82.5%;
  }
 @keyframes drop{
     from {  top:0px;
+            opacity:1;
          }
     to {
         top: 200px;
+        opacity:0.1
     }
    }
 
