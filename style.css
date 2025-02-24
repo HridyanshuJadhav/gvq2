@@ -78,7 +78,7 @@ nav {
 #home-p2 {
     margin-top: -1%;
 }  
-#home-button { 
+#home-button1 { 
     background-color: white;
     margin-top:8vh ;
     margin-left:45%;
@@ -93,18 +93,18 @@ nav {
     margin-top: -1%; 
 }
 
-#home-button:hover {
+#home-button1:hover {
     text-decoration: none;
     background-color:#ff5722;
     color: white;
     transform: scale(1.1);
 } 
-#home-button a {
+#home-button{
     text-decoration: none;
     color: black;
 }     
 
-#home-button a:hover {
+#home-button:hover {
     color: white;
 }
 .confetti {
