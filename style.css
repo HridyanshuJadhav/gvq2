@@ -113,31 +113,31 @@ nav {
  }
 #confetti1 {
     background-color: rgb(143, 236, 145);
-    animation-delay: 1s;
-    left: 16.5%;
+    animation-delay: 0s;
+    left: 10%;
  }
  
  #confetti2 {
      background-color: rgb(228, 49, 49);
-     animation-delay: 3s;
-     left: 33%;
+     animation-delay: 0.5s;
+     left: 30%;
   }
   
   #confetti3 {
      background-color: rgb(211, 237, 13);
-     animation-delay: 1.5s;
-      left: 49.5%;
+     animation-delay: 1s;
+      left: 50%;
   }
   
   #confetti4 {
      background-color: rgb(177, 39, 119);
-     animation-delay: 2s;
-      left: 66%;
+     animation-delay: 1.5s;
+      left: 70%;
   }
   #confetti5 {
     background-color: rgb(159, 86, 177);
-    animation-delay: 2.5s;
-      left: 82.5%;
+    animation-delay: 2s;
+      left: 90%;
  }
 @keyframes drop{
     from {  top:0px;
