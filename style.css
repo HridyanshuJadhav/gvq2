@@ -99,6 +99,14 @@ nav {
     color: white;
     transform: scale(1.1);
 } 
+#home-button a {
+    text-decoration: none;
+    color: black;
+}     
+
+#home-button a:hover {
+    color: white;
+}
 .confetti {
     height: 5px;
     width: 5px;
