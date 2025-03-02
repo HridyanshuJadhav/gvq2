@@ -1,6 +1,6 @@
 <?php
 // Firebase Database URL -  ADD A PATH HERE!!!
-$firebase_url = "https://gvq2-contactus-default-rtdb.firebaseio.com/contacts.json"; //Important change
+$firebase_url = "https://gvq2-contactus-default-rtdb.firebaseio.com/contacts/test.json"; //Important change //remove /test from this text
 
 // User Input (Sanitize these inputs!)
 $contactus_name = filter_var($_POST['contactus_name'], FILTER_SANITIZE_STRING);
@@ -30,6 +30,10 @@ $firebase_url = "https://gvq2-contactus-default-rtdb.firebaseio.com/contacts/{$u
 
 // Convert data to JSON
 $json_data = json_encode($data);
+
+echo "<pre>";
+print_r($firebase_url);
+echo "</pre>"
 
 // cURL Setup
 $ch = curl_init($firebase_url); //Simplified curl initialization.
