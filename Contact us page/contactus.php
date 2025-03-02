@@ -1,35 +1,36 @@
 <?php
+// Firebase Database ka URL
+$firebase_url = "https://gvq2-contactus-default-rtdb.firebaseio.com/";
 
-$server = "localhost";
-$username = "root";
-$password = "";
-$dbname = "gvq_major";
-
-$con = mysqli_connect($server, $username, $password, $dbname);
-
-if(!$con){
-    echo "Not connected";
-}
-
-else{
-    echo "Connected";
-}
-
-//start
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+// User Input
 $contactus_name = $_POST['contactus_name'];
 $contactus_email = $_POST['contactus_email'];
 $contactus_message = $_POST['contactus_message'];
 
-$sql = "INSERT INTO test1 (contactus_name, contactus_email, contactus_message) 
-        VALUES ('$contactus_name', '$contactus_email', '$contactus_message')";
+// Data Array
+$data = [
+    "name" => $contactus_name,
+    "email" => $contactus_email,
+    "message" => $contactus_message
+];
 
-$result = mysqli_query($con, $sql);
+// Convert data to JSON
+$json_data = json_encode($data);
 
-if ($result) {
+// cURL Setup
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $firebase_url);
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $json_data);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HTTPHEADER, ["Content-Type: application/json"]);
+
+$response = curl_exec($ch);
+curl_close($ch);
+
+if ($response) {
     echo "Data Submitted Successfully!";
 } else {
-    echo "Error: " . mysqli_error($con);
-}
+    echo "Error!";
 }
 ?>
