@@ -360,6 +360,7 @@ justify-content: space-evenly;
     font-weight: bold;
     font-family:'poppins',sans-serif;
     font-size: large;
+    color: black;
 }
 
 #login5:hover{
