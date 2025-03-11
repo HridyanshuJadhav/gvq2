@@ -265,124 +265,115 @@ footer {
 
 
 /* Login signup section */
-
 #login_body{
     display:flex;
    margin: 0;
 }
 
 #login-div1{
-width:54%;
-height:100vh;
- font-family:'poppins',sans-serif;
- color: white;
- background: linear-gradient(142deg,#2193b0 35%,#6dd5ed 35% );
- background-attachment: fixed;
- display: flex;
- justify-content: center;
- align-items: center;
- 
- 
+    width:60%;
+    height:100vh;
+    font-family:'poppins',sans-serif;
+    color: white;
+    background: linear-gradient(145deg,#2193b0 37%,#6dd5ed 37% );
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0px;
+ }
+
+#login-p1{
+    font-size: 40px;   
+    text-align: center;
+    font-weight: bold;
+}
+
+#login-p2{
+    margin-left: 40px;
+    margin-right: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 30px;
 }
 
 #login-div2{
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top:35px;
     background-color: white;
-    /*height:200px;*/
-    border-radius: 15px;
-    margin-top: 40px;
- }
+    height:85%;
+    border-radius: 16px;
+    margin-top: -55px;
+    box-shadow: -1px -1px 80px 1px gray;
+}
+
+#login-div4{
+    background-color: whitesmoke;
+    width:40%;
+    height:100vh;
+    padding-left: 35px;
+    padding-right: 35px;
+}
 
 #login-div3{
-/*height:500px;*/
 display:flex;
 flex-direction: column;
 justify-content: space-evenly;
 }
 
-#login-div6{
-    text-align: center;
-    line-height: 0px;
-    font-weight: bold;
-}
-
-#login-div4{
-    background-color: whitesmoke;
-   /* padding:30px;*/
-    width:46%;
-    height:100vh;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-h1{
+#login-h1{
     text-align: center;
     font-family:'poppins',sans-serif;
+    margin-top: 100px;
+    padding-top: 25px;
+    font-weight: 400px;
 }
 
-
-#login1{
-    height:50px;
+#login-div3 input{
+    height:48px;
     border-radius: 3px;
     border:solid, black, 1px;
+    margin-left: 43px;
+    margin-right: 43px;
+    font-size: 15px;  
 }
-
-#login2{
-    height:50px;
+#login-div3 button{
+    height:48px;
     border-radius: 3px;
-    border:solid, black, 1px;
-}
-#login3{
-    height:50px;
-    border-radius: 3px;
-    border:solid, black, 1px;
-}
-#login4{
-    height:50px;
-    border-radius: 3px;
-    border:solid, black, 1px;
-}
-#login5{
-    height:50px;
-    border-radius: 8px;
-    border:solid, white, 1px;
-    background-color: rgb(227, 96, 25);
+    border:0px;
+    color: white;
+    margin-left: 43px;
+    margin-right: 43px;
+    font-size: 15px;  
+    background: #ff5722;
+    border-radius: 5px;
 }
 
-#login6{
+#login-div3 button:hover{
+    background: #e64a19;
+    transform: scale(1.05);
+}
+
+#login-p3{
     margin:20px;
     text-align: center;
     font-weight: bold;
     font-family:'poppins',sans-serif;
+    font-size: large;
 }
 
-
-#login-span1{
-    font-size: 45px;
-}
-
-#login-span2{
-    font-size: 24px;
-    line-height:30px ;
-}
-button:hover{
-    background-color: rgb(250, 129, 69);
+#login5:hover{
+    background-color:orangered;
     color:white;
 }
 
-#login_body{
-    background-color: white;
-    display:flex;
+#login-a1{
+    color:orangered;
+    text-decoration: none;
 }
 
-#login-div2{
-    width:60%;
-}
-#login-div3{
-    width:40%;
-}
+
+
 
 
 
