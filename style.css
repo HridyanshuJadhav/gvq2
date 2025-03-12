@@ -1,4 +1,8 @@
 /* Home page section */
+::selection{
+    background-color:#121212 ;
+    color: #ffcc00;
+}
 body {
     height:100%;
     font-family:'poppins',sans-serif;
