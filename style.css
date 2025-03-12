@@ -264,13 +264,13 @@ footer {
 /* Help section */
 
 
-/* Login signup section */
-#login_body{
+/* login signup section */
+#signup_body{
     display:flex;
    margin: 0;
 }
 
-#login-div1{
+#signup-div1{
     width:60%;
     height:100vh;
     font-family:'poppins',sans-serif;
@@ -284,13 +284,13 @@ footer {
     line-height: 0px;
  }
 
-#login-p1{
+#signup-p1{
     font-size: 40px;   
     text-align: center;
     font-weight: bold;
 }
 
-#login-p2{
+#signup-p2{
     margin-left: 40px;
     margin-right: 50px;
     text-align: center;
@@ -299,7 +299,7 @@ footer {
     line-height: 30px;
 }
 
-#login-div2{
+#signup-div2{
     background-color: white;
     height:85%;
     border-radius: 16px;
@@ -307,7 +307,7 @@ footer {
     box-shadow: -1px -1px 80px 1px gray;
 }
 
-#login-div4{
+#signup-div4{
     background-color: whitesmoke;
     width:40%;
     height:100vh;
@@ -315,13 +315,13 @@ footer {
     padding-right: 35px;
 }
 
-#login-div3{
+#signup-div3{
 display:flex;
 flex-direction: column;
 justify-content: space-evenly;
 }
 
-#login-h1{
+#signup-h1{
     text-align: center;
     font-family:'poppins',sans-serif;
     margin-top: 100px;
@@ -330,7 +330,7 @@ justify-content: space-evenly;
     color: black;
 }
 
-#login-div3 input{
+#signup-div3 input{
     height:48px;
     border-radius: 3px;
     border:solid, black, 1px;
@@ -338,7 +338,7 @@ justify-content: space-evenly;
     margin-right: 43px;
     font-size: 15px;  
 }
-#login-div3 button{
+#signup-div3 button{
     height:48px;
     border-radius: 3px;
     border:0px;
@@ -350,12 +350,12 @@ justify-content: space-evenly;
     border-radius: 5px;
 }
 
-#login-div3 button:hover{
+#signup-div3 button:hover{
     background: #e64a19;
     transform: scale(1.05);
 }
 
-#login-p3{
+#signup-p3{
     margin:20px;
     text-align: center;
     font-weight: bold;
@@ -364,12 +364,12 @@ justify-content: space-evenly;
     color: black;
 }
 
-#login5:hover{
+#signup5:hover{
     background-color:orangered;
     color:white;
 }
 
-#login-a1{
+#signup-a1{
     color:orangered;
     text-decoration: none;
 }
