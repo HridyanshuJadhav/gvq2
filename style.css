@@ -273,7 +273,6 @@ footer {
     display:flex;
    margin: 0;
 }
-
 #signup-div1{
     width:60%;
     height:100vh;
@@ -287,13 +286,11 @@ footer {
     align-items: center;
     line-height: 0px;
  }
-
 #signup-p1{
     font-size: 40px;   
     text-align: center;
     font-weight: bold;
 }
-
 #signup-p2{
     margin-left: 40px;
     margin-right: 50px;
@@ -302,7 +299,6 @@ footer {
     font-size: 23px;
     line-height: 30px;
 }
-
 #signup-div2{
     background-color: white;
     height:85%;
@@ -310,7 +306,6 @@ footer {
     margin-top: -55px;
     box-shadow: -1px -1px 80px 1px gray;
 }
-
 #signup-div4{
     background-color: whitesmoke;
     width:40%;
@@ -318,22 +313,18 @@ footer {
     padding-left: 35px;
     padding-right: 35px;
 }
-
 #signup-div3{
 display:flex;
 flex-direction: column;
 justify-content: space-evenly;
 }
-
 #signup-h1{
     text-align: center;
     font-family:'poppins',sans-serif;
     margin-top: 100px;
     padding-top: 25px;
     font-weight: 400px;
-    color: black;
 }
-
 #signup-div3 input{
     height:48px;
     border-radius: 3px;
@@ -341,7 +332,7 @@ justify-content: space-evenly;
     margin-left: 43px;
     margin-right: 43px;
     font-size: 15px;
-    padding-left: 18px;
+    padding-left: 18px;  
 }
 #signup-div3 button{
     height:48px;
@@ -354,28 +345,34 @@ justify-content: space-evenly;
     background: #ff5722;
     border-radius: 5px;
 }
-
 #signup-div3 button:hover{
     background: #e64a19;
     transform: scale(1.05);
 }
-
-#signup-p3{
-    margin:20px;
-    text-align: center;
+#signup-div5 a:hover{
+    transform: scale(1.05);
+    font-size: 17px;  
+}
+#signup-div5{
+    display: inline;
+}
+#signup-div5 a {
     font-weight: bold;
     font-family:'poppins',sans-serif;
     font-size: large;
-    color: black;
+    text-decoration: none;
+    color:orangered;
+}#signup-div5 p
+{
+    font-weight: bold;
+    font-family:'poppins',sans-serif;
+    font-size: large;
+    margin-left: 60px;
 }
-
-#signup-a1{
+#signup-p3 a{
     color:orangered;
     text-decoration: none;
 }
-
-
-
 
 
 
