@@ -366,7 +366,7 @@ justify-content: space-evenly;
 }
 #signup-div5{
     display: inline;
-    
+    margin-top: 20px;
 }
 
 
@@ -382,7 +382,7 @@ justify-content: space-evenly;
     font-weight: bold;
     font-family:'poppins',sans-serif;
     font-size: large;
-    margin-left: 60px;
+    margin-left: 5rem;
     display: inline;
     color: black;
    }
