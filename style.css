@@ -363,8 +363,10 @@ justify-content: space-evenly;
     font-size: large;
     text-decoration: none;
     color:orangered;
-}#signup-div5 p
+}
+#signup-div5 p
 {
+    display: inline;
     font-weight: bold;
     font-family:'poppins',sans-serif;
     font-size: large;
