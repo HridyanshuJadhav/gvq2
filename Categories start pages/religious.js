@@ -8,7 +8,7 @@ let religious_result = 0;
 let religious_l1_result = 0;
 let religious_l2_result = 0;
 let religious_l3_result = 0;
-function religious_level1_submit(){
+window.religious_level1_submit = function(){
   religious_l1_result = 0;
   let q1 = document.querySelector('input[name=q1]:checked');
   if (q1 == q1_1) {
