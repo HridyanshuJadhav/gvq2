@@ -4,9 +4,6 @@ document.getElementById("religious-question-div3").hidden = true;
 document.getElementById("religious_level1_nextlevel").disabled = true;
 document.getElementById("religious_level2_nextlevel").disabled = true;
 
-document.getElementById("religious_level1_submit").addEventListener("click", religious_level1_submit);
-
-
 let religious_result = 0;
 let religious_l1_result = 0;
 let religious_l2_result = 0;
