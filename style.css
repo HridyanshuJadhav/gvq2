@@ -273,10 +273,11 @@ footer {
     display:flex;
    margin: 0;
 }
+
 #signup-div1{
-    width: 60%;
-    height: 100vh;
-    font-family: 'poppins',sans-serif;
+    width:60%;
+    height:100vh;
+    font-family:'poppins',sans-serif;
     color: white;
     background: linear-gradient(145deg,#2193b0 37%,#6dd5ed 37% );
     background-attachment: fixed;
@@ -286,11 +287,13 @@ footer {
     align-items: center;
     line-height: 0px;
  }
+
 #signup-p1{
     font-size: 40px;   
     text-align: center;
     font-weight: bold;
 }
+
 #signup-p2{
     margin-left: 40px;
     margin-right: 50px;
@@ -299,33 +302,37 @@ footer {
     font-size: 23px;
     line-height: 30px;
 }
+
 #signup-div2{
     background-color: white;
-    height: 85%;
+    height:85%;
     border-radius: 16px;
     margin-top: -55px;
     box-shadow: -1px -1px 80px 1px gray;
 }
+
 #signup-div4{
     background-color: whitesmoke;
-    width: 40%;
-    height: 100vh;
+    width:40%;
+    height:100vh;
     padding-left: 35px;
     padding-right: 35px;
 }
+
 #signup-div3{
 display:flex;
 flex-direction: column;
 justify-content: space-evenly;
 }
-#signup-h2{
+
+#signup-h1{
     text-align: center;
     font-family:'poppins',sans-serif;
     margin-top: 100px;
     padding-top: 25px;
     font-weight: 400px;
-    color: black;
 }
+
 #signup-div3 input{
     height:48px;
     border-radius: 3px;
@@ -346,34 +353,40 @@ justify-content: space-evenly;
     background: #ff5722;
     border-radius: 5px;
 }
+
 #signup-div3 button:hover{
     background: #e64a19;
     transform: scale(1.05);
 }
+
 #signup-div5 a:hover{
     transform: scale(1.05);
     font-size: 17px;  
 }
 #signup-div5{
     display: inline;
+    
 }
+
+
 #signup-div5 a {
     font-weight: bold;
     font-family:'poppins',sans-serif;
     font-size: large;
     text-decoration: none;
     color:orangered;
-}
-#signup-div5 p
-{
-    display: inline;
+    
+   }
+   #signup-div5 p{
     font-weight: bold;
     font-family:'poppins',sans-serif;
     font-size: large;
     margin-left: 60px;
-    color: black;
-}
-#signup-p3 a1{
+    display: inline;
+   }
+
+
+#signup-p3 a{
     color:orangered;
     text-decoration: none;
 }
