@@ -369,8 +369,9 @@ justify-content: space-evenly;
     font-family:'poppins',sans-serif;
     font-size: large;
     margin-left: 60px;
+    color: black;
 }
-#signup-p3 a{
+#signup-p3 a1{
     color:orangered;
     text-decoration: none;
 }
