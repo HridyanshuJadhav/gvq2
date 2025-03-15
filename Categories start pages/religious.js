@@ -1,8 +1,8 @@
 document.getElementById("religious-question-div2").hidden = true;
 document.getElementById("religious-question-div3").hidden = true;
 
-document.getElementById("religious_level1_nextlevel").disabled = true;
-document.getElementById("religious_level2_nextlevel").disabled = true;
+document.getElementById("religious_level1_nextlevel_btn").disabled = true;
+document.getElementById("religious_level2_nextlevel_btn").disabled = true;
 
 let religious_result = 0;
 let religious_l1_result = 0;
@@ -160,11 +160,11 @@ function religious_level1_submit(){
   religious_result = religious_l1_result;
 
   if (religious_l1_result < 3) {
-    document.getElementById("religious_level1_nextlevel").disabled = true;
+    document.getElementById("religious_level1_nextleve_btn").disabled = true;
     document.getElementById("religious_level1_result").innerHTML = "Your score of level 1 is <b style='text-shadow:0 0 20px black;'>" + religious_l1_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + religious_result + "</b> out of 21. You failed the level. You can't go to the next level. Please try again.";
   }
   if (religious_l1_result >= 3) {
-    document.getElementById("religious_level1_nextlevel").disabled = false;
+    document.getElementById("religious_level1_nextleve_btn").disabled = false;
     document.getElementById("religious_level1_result").innerHTML = "Your score of level 1 is <b style='text-shadow:0 0 20px black;'>" + religious_l1_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + religious_result + "</b> out of 21. You passed the level. You can go to the next level.";
   }
 }
@@ -177,7 +177,7 @@ function religious_level1_reset(){
   };
   document.getElementById("religious_level1_result").innerHTML = " ";
   document.querySelectorAll('input[type=radio]:checked').forEach(radio => radio.checked = false);
-  document.getElementById("religious_level1_nextlevel").disabled = true;
+  document.getElementById("religious_level1_nextlevel_btn").disabled = true;
   religious_l1_result = 0;
   religious_result = 0;
 }
@@ -345,11 +345,11 @@ function religious_level2_submit(){
   religious_result += religious_l2_result;
 
   if (religious_l2_result < 3) {
-    document.getElementById("religious_level2_nextlevel").disabled = true;
+    document.getElementById("religious_level2_nextlevel_btn").disabled = true;
     document.getElementById("religious_level2_result").innerHTML = "Your score of level 2 is <b style='text-shadow:0 0 20px black;'>" + religious_l2_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + religious_result + "</b> out of 21. You failed the level. You can't go to the next level. Please try again.";
   }
   if (religious_l2_result >= 3) {
-    document.getElementById("religious_level2_nextlevel").disabled = false;
+    document.getElementById("religious_level2_nextlevel_btn").disabled = false;
     document.getElementById("religious_level2_result").innerHTML = "Your score of level 2 is <b style='text-shadow:0 0 20px black;'>" + religious_l2_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + religious_result + "</b> out of 21. You passed the level. You can go to the next level.";
   }
 }
@@ -362,7 +362,7 @@ function religious_level2_reset(){
   };
   document.getElementById("religious_level2_result").innerHTML = " ";
   document.querySelectorAll('input[type=radio]:checked').forEach(radio => radio.checked = false);
-  document.getElementById("religious_level2_nextlevel").disabled = true;
+  document.getElementById("religious_level2_nextlevel_btn").disabled = true;
   religious_result -= religious_l2_result;
   religious_l2_result = 0;;
 }
@@ -545,7 +545,7 @@ function religious_level3_reset(){
   };
   document.getElementById("religious_level3_result").innerHTML = " ";
   document.querySelectorAll('input[type=radio]:checked').forEach(radio => radio.checked = false);
-  document.getElementById("religious_level3_nextlevel").disabled = true;
+  document.getElementById("religious_level3_nextlevel_btn").disabled = true;
   religious_result -= religious_l3_result;
   religious_l3_result = 0;;
 }
