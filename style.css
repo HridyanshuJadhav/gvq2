@@ -855,8 +855,106 @@ body{
   text-shadow: 0 0 20px black;
 }
 
-/* sports */
+/* Funny category section */
+#funny-h2{
+    margin-top: 8rem;
+}
 
+#funny-question-div1 #q1_3_p,
+#funny-question-div1 #q2_1_p,
+#funny-question-div1 #q3_4_p,
+#funny-question-div1 #q4_4_p,
+#funny-question-div1 #q5_4_p,
+#funny-question-div1 #q6_3_p,
+#funny-question-div1 #q7_1_p,
+#funny-question-div2 #q8_3_p,
+#funny-question-div2 #q9_2_p,
+#funny-question-div2 #q10_4_p,
+#funny-question-div2 #q11_2_p,
+#funny-question-div2 #q12_4_p,
+#funny-question-div2 #q13_1_p,
+#funny-question-div2 #q14_3_p,
+#funny-question-div3 #q15_4_p,
+#funny-question-div3 #q16_4_p,
+#funny-question-div3 #q17_4_p,
+#funny-question-div3 #q18_4_p,
+#funny-question-div3 #q19_2_p,
+#funny-question-div3 #q20_4_p,
+#funny-question-div3 #q21_2_p{
+  display: inline;
+  color: lime;
+  text-shadow: 0 0 20px black;
+}
+
+#funny-question-div1 #q1_1_p,
+#funny-question-div1 #q1_2_p,
+#funny-question-div1 #q1_4_p,
+#funny-question-div1 #q2_2_p,
+#funny-question-div1 #q2_3_p,
+#funny-question-div1 #q2_4_p,
+#funny-question-div1 #q3_1_p,
+#funny-question-div1 #q3_2_p,
+#funny-question-div1 #q3_3_p,
+#funny-question-div1 #q4_1_p,
+#funny-question-div1 #q4_2_p,
+#funny-question-div1 #q4_3_p,
+#funny-question-div1 #q5_1_p,
+#funny-question-div1 #q5_2_p,
+#funny-question-div1 #q5_3_p,
+#funny-question-div1 #q6_1_p,
+#funny-question-div1 #q6_2_p,
+#funny-question-div1 #q6_4_p,
+#funny-question-div1 #q7_2_p,
+#funny-question-div1 #q7_3_p,
+#funny-question-div1 #q7_4_p,
+#funny-question-div2 #q8_1_p,
+#funny-question-div2 #q8_2_p,
+#funny-question-div2 #q8_4_p,
+#funny-question-div2 #q9_1_p,
+#funny-question-div2 #q9_3_p,
+#funny-question-div2 #q9_4_p,
+#funny-question-div2 #q10_1_p,
+#funny-question-div2 #q10_2_p,
+#funny-question-div2 #q10_3_p,
+#funny-question-div2 #q11_1_p,
+#funny-question-div2 #q11_3_p,
+#funny-question-div2 #q11_4_p,
+#funny-question-div2 #q12_1_p,
+#funny-question-div2 #q12_2_p,
+#funny-question-div2 #q12_3_p,
+#funny-question-div2 #q13_2_p,
+#funny-question-div2 #q13_3_p,
+#funny-question-div2 #q13_4_p,
+#funny-question-div2 #q14_1_p,
+#funny-question-div2 #q14_2_p,
+#funny-question-div2 #q14_4_p,
+#funny-question-div3 #q15_1_p,
+#funny-question-div3 #q15_2_p,
+#funny-question-div3 #q15_3_p,
+#funny-question-div3 #q16_1_p,
+#funny-question-div3 #q16_2_p,
+#funny-question-div3 #q16_3_p,
+#funny-question-div3 #q17_1_p,
+#funny-question-div3 #q17_2_p,
+#funny-question-div3 #q17_3_p,
+#funny-question-div3 #q18_1_p,
+#funny-question-div3 #q18_2_p,
+#funny-question-div3 #q18_3_p,
+#funny-question-div3 #q19_1_p,
+#funny-question-div3 #q19_3_p,
+#funny-question-div3 #q19_4_p,
+#funny-question-div3 #q20_1_p,
+#funny-question-div3 #q20_2_p,
+#funny-question-div3 #q20_3_p,
+#funny-question-div3 #q21_1_p,
+#funny-question-div3 #q21_3_p,
+#funny-question-div3 #q21_4_p{
+  display: inline;
+  color: red;
+  text-shadow: 0 0 20px black;
+}
+
+/* sports */
 #sports-question-div1 #q1_1_p,
 #sports-question-div1 #q2_2_p,
 #sports-question-div1 #q3_2_p,
