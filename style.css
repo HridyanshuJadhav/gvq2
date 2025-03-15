@@ -3,6 +3,7 @@
     background-color:#121212 ;
     color: #ffcc00;
 }
+
 body {
     height:100%;
     font-family:'poppins',sans-serif;
@@ -11,14 +12,14 @@ body {
     background-attachment: fixed;
 }
 nav {
-      position: fixed;  
-      top:0;  
-/*       margin-top:-0.9rem;   */
+    position: fixed;  
+    top:0;  
+    margin-top:-0.9rem;  
     width:100%;
     background-color: rgba(0, 0, 0, 0.6);
-     margin-left:-8px; 
+    margin-left:-8px; 
     margin-right: -2px;
-   
+    overflow: hidden;
 }
 
 #navp1 {
@@ -42,12 +43,11 @@ nav {
 
 }
 #gvq-text {
-    font-weight: 500;
+    font-weight: 300;
     margin-left: -60px;
     font-size: 25px;
     margin-top: -27px;
-    
-}
+    }
 .nav-element {
     color: white;
     text-decoration: none;
@@ -56,17 +56,21 @@ nav {
 .nav-element:hover {
     color: #ff5722;
 }
-#home-text {
- margin-top:150px;}
+/* #home-text {
+ margin-top:150px;
+} */
 
 #home-welcome {
-    margin-top: 10%;
+    margin-top:80px; 
     font-size: 3vw;
-    display: flex; 
-    justify-content: center;
     text-align: center;
     font-weight: bold;
+    position: relative;
+    animation: homewelcome 5s forwards ease-in-out;
+    /* animation-delay: 0.1s; */
 }
+    
+    
 
 #home-p1, #home-p2, #home-p3, #home-p4 {
     display: flex; 
@@ -77,91 +81,136 @@ nav {
 
 #home-p1 {
     margin-top: 1%;
+    position: relative;
+    animation: homep1 3s forwards ease-in-out;
+    animation-delay: 1s;
 }
 
 #home-p2 {
     margin-top: -1%;
+    position: relative;
+    animation: homep1 3s forwards ease-in-out;
+    animation-delay: 1s;
 }  
+
+  @keyframes homewelcome
+{ from {  top:80px;
+    opacity: 0;
+     }
+to {
+  top: 125px;
+  opacity: 1;
+  } 
+}
+
+@keyframes homep1{
+    from {  top:60px;
+        opacity:0;
+    }
+to {
+ top: 120px;
+ opacity: 1;
+ }
+} 
+
 #home-button1 { 
     background-color: white;
-    margin-top:8vh ;
+    margin-top:60px;
     margin-left:45%;
     padding: 1% 2% 1% 2%;
     border: none;
     border-radius:5px;
-    text-decoration: none;
     color: black;
     display: block;
- }
-#home-p4 {
-    margin-top: -1%; 
+    
 }
 
-#home-button1:hover {
-    text-decoration: none;
-    background-color:#ff5722;
-    color: white;
-    transform: scale(1.1);
-} 
-#home-button{
+ #home-button{
     text-decoration: none;
     color: black;
+    position: relative;
+    animation: homebutton;
+    animation-duration: 3s; 
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards; 
+
 }     
 
 #home-button:hover {
     color: white;
 }
+
+#home-p4 {
+    margin-top: -1%; 
+}
+
+#home-button1:hover {
+    
+    background-color:#ff5722;
+    color: white;
+    transform: scale(1.1);
+} 
+
+@keyframes homebutton {
+    0% {
+        top: 90px;
+    }
+    50% {
+        top: 100px;
+    }
+    100% {
+        top: 90px;
+    }
+  }
+
+
 .confetti {
-    height: 5px;
-    width: 5px;
+    height: 10px;
+    width: 10px;
     display: inline-block;
     position: relative;
-    margin-bottom: 120px;
+    margin-top:55px;
     animation: drop;
     animation-duration: 5s; 
     animation-iteration-count: infinite;
     animation-fill-mode: forwards; 
+    margin-left: 16.5%;
     z-index: -1;
  }
-#confetti1 {
+ #confetti1 {
     background-color: rgb(143, 236, 145);
-    animation-delay: 0s;
-    left: 10%;
+    animation-delay: 0.5s;
  }
  
  #confetti2 {
      background-color: rgb(228, 49, 49);
-     animation-delay: 0.5s;
-     left: 30%;
+     animation-delay: 1s;
   }
   
   #confetti3 {
      background-color: rgb(211, 237, 13);
-     animation-delay: 1s;
-      left: 50%;
+     animation-delay: 1.5s;
   }
   
   #confetti4 {
      background-color: rgb(177, 39, 119);
-     animation-delay: 1.5s;
-      left: 70%;
+     animation-delay: 2s;
   }
   #confetti5 {
     background-color: rgb(159, 86, 177);
-    animation-delay: 2s;
-      left: 90%;
+    animation-delay: 2.5s;
  }
 @keyframes drop{
-    from {  top:0px;
-            opacity:1;
+    from {  top:55px;
+          opacity: 1;
+         transform: rotateZ(0deg);
          }
     to {
-        top: 200px;
-        opacity:0.1
+        top:160px;
+        opacity: 0.2;
+        transform: rotateZ(100deg);
     }
    }
-
-
 footer {
     color: white;
     font-size: 18px;
@@ -171,9 +220,9 @@ footer {
     padding-bottom: 5px;
     margin-left:-1%;
     margin-right:-1%;
-    margin-bottom:-2px;
+    margin-top:155px;
 }   
-
+  
 
 /* Aboust us section */
 #aboutus-firstline {
@@ -268,7 +317,7 @@ footer {
 /* Help section */
 
 
-/* login signup section */
+/*  signup section */
 #signup_body{
     display:flex;
    margin: 0;
@@ -389,6 +438,130 @@ justify-content: space-evenly;
 
 
 #signup-div5 a{
+    color:orangered;
+    text-decoration: none;
+}
+/* Login */
+#login_body{
+    display:flex;
+   margin: 0;
+}
+
+#login-div1{
+    width:60%;
+    height:100vh;
+    font-family:'poppins',sans-serif;
+    color: white;
+    background: linear-gradient(145deg,#2193b0 37%,#6dd5ed 37% );
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0px;
+ }
+
+#login-p1{
+    font-size: 40px;   
+    text-align: center;
+    font-weight: bold;
+}
+
+#login-p2{
+    margin-left: 40px;
+    margin-right: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 30px;
+}
+
+#login-div2{
+    background-color: white;
+    height:85%;
+    border-radius: 16px;
+    margin-top: -55px;
+    box-shadow: -1px -1px 80px 1px gray;
+}
+
+#login-div4{
+    background-color: whitesmoke;
+    width:40%;
+    height:100vh;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+#login-div3{
+display:flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+#login-h2{
+    text-align: center;
+    font-family:'poppins',sans-serif;
+    margin-top: 100px;
+    padding-top: 25px;
+    font-weight: 400px;
+    color: black;
+}
+
+#login-div3 input{
+    height:48px;
+    border-radius: 3px;
+    border:solid, black, 1px;
+    margin-left: 43px;
+    margin-right: 43px;
+    font-size: 15px;
+    padding-left: 18px;  
+}
+#login-div3 button{
+    height:48px;
+    border-radius: 3px;
+    border:0px;
+    color: white;
+    margin-left: 43px;
+    margin-right: 43px;
+    font-size: 15px;  
+    background: #ff5722;
+    border-radius: 5px;
+}
+
+#login-div3 button:hover{
+    background: #e64a19;
+    transform: scale(1.05);
+}
+
+#login-div5 a:hover{
+    transform: scale(1.05);
+    font-size: 17px;  
+}
+#login-div5{
+    display: inline;
+    margin-top: 20px;
+}
+
+
+#login-div5 a {
+    font-weight: bold;
+    font-family:'poppins',sans-serif;
+    font-size: large;
+    text-decoration: none;
+    color:orangered;
+    
+   }
+   #login-div5 p{
+    font-weight: bold;
+    font-family:'poppins',sans-serif;
+    font-size: large;
+    margin-left: 5rem;
+    display: inline;
+    color: black;
+   }
+
+
+#login-div5 a{
     color:orangered;
     text-decoration: none;
 }
@@ -680,4 +853,403 @@ body{
   display: inline;
   color: red;
   text-shadow: 0 0 20px black;
+}
+
+/* sports */
+
+#sports-question-div1 #q1_1_p,
+#sports-question-div1 #q2_2_p,
+#sports-question-div1 #q3_2_p,
+#sports-question-div1 #q4_1_p,
+#sports-question-div1 #q5_3_p,
+#sports-question-div1 #q6_1_p,
+#sports-question-div1 #q7_2_p,
+#sports-question-div2 #q8_3_p,
+#sports-question-div2 #q9_1_p,
+#sports-question-div2 #q10_3_p,
+#sports-question-div2 #q11_1_p,
+#sports-question-div2 #q12_2_p,
+#sports-question-div2 #q13_4_p,
+#sports-question-div2 #q14_3_p,
+#sports-question-div3 #q15_1_p,
+#sports-question-div3 #q16_3_p,
+#sports-question-div3 #q17_2_p,
+#sports-question-div3 #q18_2_p,
+#sports-question-div3 #q19_4_p,
+#sports-question-div3 #q20_3_p,
+#sports-question-div3 #q21_1_p
+{
+    display: inline;
+    color: rgb(51, 237, 51);
+}
+
+#sports-question-div1 #q1_2_p,
+#sports-question-div1 #q1_3_p,
+#sports-question-div1 #q1_4_p,
+#sports-question-div1 #q2_1_p,
+#sports-question-div1 #q2_3_p,
+#sports-question-div1 #q2_4_p,
+#sports-question-div1 #q3_1_p,
+#sports-question-div1 #q3_3_p,
+#sports-question-div1 #q3_4_p,
+#sports-question-div1 #q4_2_p,
+#sports-question-div1 #q4_3_p,
+#sports-question-div1 #q4_4_p,
+#sports-question-div1 #q5_1_p,
+#sports-question-div1 #q5_2_p,
+#sports-question-div1 #q5_4_p,
+#sports-question-div1 #q6_2_p,
+#sports-question-div1 #q6_3_p,
+#sports-question-div1 #q6_4_p,
+#sports-question-div1 #q7_1_p,
+#sports-question-div1 #q7_3_p,
+#sports-question-div1 #q7_4_p,
+#sports-question-div2 #q8_1_p,
+#sports-question-div2 #q8_2_p,
+#sports-question-div2 #q8_4_p,
+#sports-question-div2 #q9_2_p,
+#sports-question-div2 #q9_3_p,
+#sports-question-div2 #q9_4_p,
+#sports-question-div2 #q10_1_p,
+#sports-question-div2 #q10_2_p,
+#sports-question-div2 #q10_4_p,
+#sports-question-div2 #q11_2_p,
+#sports-question-div2 #q11_3_p,
+#sports-question-div2 #q11_4_p,
+#sports-question-div2 #q12_1_p,
+#sports-question-div2 #q12_3_p,
+#sports-question-div2 #q12_4_p,
+#sports-question-div2 #q13_1_p,
+#sports-question-div2 #q13_2_p,
+#sports-question-div2 #q13_3_p,
+#sports-question-div2 #q14_1_p,
+#sports-question-div2 #q14_2_p,
+#sports-question-div2 #q14_4_p,
+#sports-question-div3 #q15_2_p,
+#sports-question-div3 #q15_3_p,
+#sports-question-div3 #q15_4_p,
+#sports-question-div3 #q16_1_p,
+#sports-question-div3 #q16_2_p,
+#sports-question-div3 #q16_4_p,
+#sports-question-div3 #q17_1_p,
+#sports-question-div3 #q17_3_p,
+#sports-question-div3 #q17_4_p,
+#sports-question-div3 #q18_1_p,
+#sports-question-div3 #q18_3_p,
+#sports-question-div3 #q18_4_p,
+#sports-question-div3 #q19_1_p,
+#sports-question-div3 #q19_2_p,
+#sports-question-div3 #q19_3_p,
+#sports-question-div3 #q20_1_p,
+#sports-question-div3 #q20_2_p,
+#sports-question-div3 #q20_4_p,
+#sports-question-div3 #q21_2_p,
+#sports-question-div3 #q21_3_p,
+#sports-question-div3 #q21_4_p
+{
+    display: inline;
+    color: red;
+}
+
+/* business and economy */
+#business_and_economy-question-div1 #q1_2_p,
+#business_and_economy-question-div1 #q2_2_p,
+#business_and_economy-question-div1 #q3_3_p,
+#business_and_economy-question-div1 #q4_2_p,
+#business_and_economy-question-div1 #q5_4_p,
+#business_and_economy-question-div1 #q6_3_p,
+#business_and_economy-question-div1 #q7_4_p,
+#business_and_economy-question-div2 #q8_1_p,
+#business_and_economy-question-div2 #q9_4_p,
+#business_and_economy-question-div2 #q10_3_p,
+#business_and_economy-question-div2 #q11_4_p,
+#business_and_economy-question-div2 #q12_3_p,
+#business_and_economy-question-div2 #q13_3_p,
+#business_and_economy-question-div2 #q14_1_p,
+#business_and_economy-question-div3 #q15_3_p,
+#business_and_economy-question-div3 #q16_3_p,
+#business_and_economy-question-div3 #q17_2_p,
+#business_and_economy-question-div3 #q18_1_p,
+#business_and_economy-question-div3 #q19_1_p,
+#business_and_economy-question-div3 #q20_1_p,
+#business_and_economy-question-div3 #q21_4_p
+{
+    display: inline;
+    color: rgb(51, 237, 51);
+}
+
+#business_and_economy-question-div1 #q1_1_p,
+#business_and_economy-question-div1 #q1_3_p,
+#business_and_economy-question-div1 #q1_4_p,
+#business_and_economy-question-div1 #q2_1_p,
+#business_and_economy-question-div1 #q2_3_p,
+#business_and_economy-question-div1 #q2_4_p,
+#business_and_economy-question-div1 #q3_1_p,
+#business_and_economy-question-div1 #q3_2_p,
+#business_and_economy-question-div1 #q3_4_p,
+#business_and_economy-question-div1 #q4_1_p,
+#business_and_economy-question-div1 #q4_3_p,
+#business_and_economy-question-div1 #q4_4_p,
+#business_and_economy-question-div1 #q5_1_p,
+#business_and_economy-question-div1 #q5_2_p,
+#business_and_economy-question-div1 #q5_3_p,
+#business_and_economy-question-div1 #q6_1_p,
+#business_and_economy-question-div1 #q6_2_p,
+#business_and_economy-question-div1 #q6_4_p,
+#business_and_economy-question-div1 #q7_1_p,
+#business_and_economy-question-div1 #q7_2_p,
+#business_and_economy-question-div1 #q7_3_p,
+#business_and_economy-question-div2 #q8_2_p,
+#business_and_economy-question-div2 #q8_3_p,
+#business_and_economy-question-div2 #q8_4_p,
+#business_and_economy-question-div2 #q9_1_p,
+#business_and_economy-question-div2 #q9_2_p,
+#business_and_economy-question-div2 #q9_3_p,
+#business_and_economy-question-div2 #q10_1_p,
+#business_and_economy-question-div2 #q10_2_p,
+#business_and_economy-question-div2 #q10_4_p,
+#business_and_economy-question-div2 #q11_1_p,
+#business_and_economy-question-div2 #q11_2_p,
+#business_and_economy-question-div2 #q11_3_p,
+#business_and_economy-question-div2 #q12_1_p,
+#business_and_economy-question-div2 #q12_2_p,
+#business_and_economy-question-div2 #q12_4_p,
+#business_and_economy-question-div2 #q13_1_p,
+#business_and_economy-question-div2 #q13_2_p,
+#business_and_economy-question-div2 #q13_4_p,
+#business_and_economy-question-div2 #q14_2_p,
+#business_and_economy-question-div2 #q14_3_p,
+#business_and_economy-question-div2 #q14_4_p,
+#business_and_economy-question-div3 #q15_1_p,
+#business_and_economy-question-div3 #q15_2_p,
+#business_and_economy-question-div3 #q15_4_p,
+#business_and_economy-question-div3 #q16_1_p,
+#business_and_economy-question-div3 #q16_2_p,
+#business_and_economy-question-div3 #q16_4_p,
+#business_and_economy-question-div3 #q17_1_p,
+#business_and_economy-question-div3 #q17_3_p,
+#business_and_economy-question-div3 #q17_4_p,
+#business_and_economy-question-div3 #q18_2_p,
+#business_and_economy-question-div3 #q18_3_p,
+#business_and_economy-question-div3 #q18_4_p,
+#business_and_economy-question-div3 #q19_2_p,
+#business_and_economy-question-div3 #q19_3_p,
+#business_and_economy-question-div3 #q19_4_p,
+#business_and_economy-question-div3 #q20_2_p,
+#business_and_economy-question-div3 #q20_3_p,
+#business_and_economy-question-div3 #q20_4_p,
+#business_and_economy-question-div3 #q21_1_p,
+#business_and_economy-question-div3 #q21_2_p,
+#business_and_economy-question-div3 #q21_3_p
+{
+    display: inline;
+    color: red;
+}
+
+
+/* space and astrology */
+#space_and_astrology-question-div1 #q1_3_p, 
+#space_and_astrology-question-div1 #q2_1_p, 
+#space_and_astrology-question-div1 #q3_2_p, 
+#space_and_astrology-question-div1 #q4_3_p,
+#space_and_astrology-question-div1 #q5_3_p, 
+#space_and_astrology-question-div1 #q6_1_p, 
+#space_and_astrology-question-div1 #q7_1_p,
+#space_and_astrology-question-div2 #q8_3_p,
+#space_and_astrology-question-div2 #q9_4_p,
+#space_and_astrology-question-div2 #q10_1_p,
+#space_and_astrology-question-div2 #q11_3_p,
+#space_and_astrology-question-div2 #q12_2_p,
+#space_and_astrology-question-div2 #q13_1_p,
+#space_and_astrology-question-div2 #q14_3_p,
+#space_and_astrology-question-div3 #q15_2_p, 
+#space_and_astrology-question-div3 #q16_4_p, 
+#space_and_astrology-question-div3 #q17_4_p, 
+#space_and_astrology-question-div3 #q18_1_p, 
+#space_and_astrology-question-div3 #q19_2_p, 
+#space_and_astrology-question-div3 #q20_2_p, 
+#space_and_astrology-question-div3 #q21_3_p 
+
+{
+    display: inline;
+    color: green;
+}
+
+
+#space_and_astrology-question-div1 #q1_1_p,
+#space_and_astrology-question-div1 #q1_2_p, 
+#space_and_astrology-question-div1 #q1_4_p, 
+#space_and_astrology-question-div1 #q2_2_p, 
+#space_and_astrology-question-div1 #q2_3_p, 
+#space_and_astrology-question-div1 #q2_4_p,  
+#space_and_astrology-question-div1 #q3_1_p, 
+#space_and_astrology-question-div1 #q3_3_p, 
+#space_and_astrology-question-div1 #q3_4_p, 
+#space_and_astrology-question-div1 #q4_1_p, 
+#space_and_astrology-question-div1 #q4_2_p, 
+#space_and_astrology-question-div1 #q4_4_p, 
+#space_and_astrology-question-div1 #q5_1_p, 
+#space_and_astrology-question-div1 #q5_2_p,
+#space_and_astrology-question-div1 #q5_4_p, 
+#space_and_astrology-question-div1 #q6_2_p,  
+#space_and_astrology-question-div1 #q6_3_p, 
+#space_and_astrology-question-div1 #q6_4_p, 
+#space_and_astrology-question-div1 #q7_2_p,
+#space_and_astrology-question-div1 #q7_3_p,
+#space_and_astrology-question-div1 #q7_4_p,
+#space_and_astrology-question-div2 #q8_1_p,
+#space_and_astrology-question-div2 #q8_2_p,
+#space_and_astrology-question-div2 #q8_4_p,
+#space_and_astrology-question-div2 #q9_1_p,
+#space_and_astrology-question-div2 #q9_2_p,
+#space_and_astrology-question-div2 #q9_3_p,
+#space_and_astrology-question-div2 #q10_2_p,
+#space_and_astrology-question-div2 #q10_3_p,
+#space_and_astrology-question-div2 #q10_4_p,
+#space_and_astrology-question-div2 #q11_1_p,
+#space_and_astrology-question-div2 #q11_2_p,
+#space_and_astrology-question-div2 #q11_4_p,
+#space_and_astrology-question-div2 #q12_1_p,
+#space_and_astrology-question-div2 #q12_3_p,
+#space_and_astrology-question-div2 #q12_4_p,
+#space_and_astrology-question-div2 #q13_2_p,
+#space_and_astrology-question-div2 #q13_3_p,
+#space_and_astrology-question-div2 #q13_4_p,
+#space_and_astrology-question-div2 #q14_1_p,
+#space_and_astrology-question-div2 #q14_2_p,
+#space_and_astrology-question-div2 #q14_4_p,
+#space_and_astrology-question-div3 #q15_1_p,  
+#space_and_astrology-question-div3 #q15_3_p, 
+#space_and_astrology-question-div3 #q15_4_p, 
+#space_and_astrology-question-div3 #q16_1_p, 
+#space_and_astrology-question-div3 #q16_2_p, 
+#space_and_astrology-question-div3 #q16_3_p, 
+#space_and_astrology-question-div3 #q17_1_p, 
+#space_and_astrology-question-div3 #q17_2_p, 
+#space_and_astrology-question-div3 #q17_3_p, 
+#space_and_astrology-question-div3 #q18_2_p, 
+#space_and_astrology-question-div3 #q18_3_p, 
+#space_and_astrology-question-div3 #q18_4_p, 
+#space_and_astrology-question-div3 #q19_1_p, 
+#space_and_astrology-question-div3 #q19_3_p, 
+#space_and_astrology-question-div3 #q19_4_p, 
+#space_and_astrology-question-div3 #q20_1_p, 
+#space_and_astrology-question-div3 #q20_3_p, 
+#space_and_astrology-question-div3 #q20_4_p, 
+#space_and_astrology-question-div3 #q21_1_p, 
+#space_and_astrology-question-div3 #q21_2_p, 
+#space_and_astrology-question-div3 #q21_4_p
+{
+    display: inline;
+    color: red;
+}
+/* coding and programming */
+#coding_and_programming-question-div1 #q1_3_p,
+#coding_and_programming-question-div1 #q2_3_p,
+#coding_and_programming-question-div1 #q3_3_p,
+#coding_and_programming-question-div1 #q4_3_p,
+#coding_and_programming-question-div1 #q5_3_p,
+#coding_and_programming-question-div1 #q6_1_p,
+#coding_and_programming-question-div1 #q7_4_p,
+#coding_and_programming-question-div2 #q8_3_p,
+#coding_and_programming-question-div2 #q9_2_p,
+#coding_and_programming-question-div2 #q10_4_p,
+#coding_and_programming-question-div2 #q11_2_p,
+#coding_and_programming-question-div2 #q12_4_p,
+#coding_and_programming-question-div2 #q13_3_p,
+#coding_and_programming-question-div2 #q14_2_p,
+#coding_and_programming-question-div3 #q15_2_p,
+#coding_and_programming-question-div3 #q16_2_p,
+#coding_and_programming-question-div3 #q17_3_p,
+#coding_and_programming-question-div3 #q18_2_p,
+#coding_and_programming-question-div3 #q19_3_p,
+#coding_and_programming-question-div3 #q20_3_p,
+#coding_and_programming-question-div3 #q21_3_p
+{
+    display: inline;
+    color: rgb(51, 237, 51);
+}
+
+#coding_and_programming-question-div1 #q1_1_p,
+#coding_and_programming-question-div1 #q1_2_p,
+#coding_and_programming-question-div1 #q1_4_p,
+#coding_and_programming-question-div1 #q2_1_p,
+#coding_and_programming-question-div1 #q2_2_p,
+#coding_and_programming-question-div1 #q2_4_p,
+#coding_and_programming-question-div1 #q3_1_p,
+#coding_and_programming-question-div1 #q3_2_p,
+#coding_and_programming-question-div1 #q3_4_p,
+#coding_and_programming-question-div1 #q4_1_p,
+#coding_and_programming-question-div1 #q4_2_p,
+#coding_and_programming-question-div1 #q4_4_p,
+#coding_and_programming-question-div1 #q5_1_p,
+#coding_and_programming-question-div1 #q5_2_p,
+#coding_and_programming-question-div1 #q5_4_p,
+#coding_and_programming-question-div1 #q6_2_p,
+#coding_and_programming-question-div1 #q6_3_p,
+#coding_and_programming-question-div1 #q6_4_p,
+#coding_and_programming-question-div1 #q7_1_p,
+#coding_and_programming-question-div1 #q7_2_p,
+#coding_and_programming-question-div1 #q7_3_p,
+#coding_and_programming-question-div2 #q8_1_p,
+#coding_and_programming-question-div2 #q8_2_p,
+#coding_and_programming-question-div2 #q8_4_p,
+#coding_and_programming-question-div2 #q9_1_p,
+#coding_and_programming-question-div2 #q9_3_p,
+#coding_and_programming-question-div2 #q9_4_p,
+#coding_and_programming-question-div2 #q10_1_p,
+#coding_and_programming-question-div2 #q10_2_p,
+#coding_and_programming-question-div2 #q10_3_p,
+#coding_and_programming-question-div2 #q11_1_p,
+#coding_and_programming-question-div2 #q11_3_p,
+#coding_and_programming-question-div2 #q11_4_p,
+#coding_and_programming-question-div2 #q12_1_p,
+#coding_and_programming-question-div2 #q12_2_p,
+#coding_and_programming-question-div2 #q12_3_p,
+#coding_and_programming-question-div2 #q13_1_p,
+#coding_and_programming-question-div2 #q13_2_p,
+#coding_and_programming-question-div2 #q13_4_p,
+#coding_and_programming-question-div2 #q14_1_p,
+#coding_and_programming-question-div2 #q14_3_p,
+#coding_and_programming-question-div2 #q14_4_p,
+#coding_and_programming-question-div3 #q15_1_p,
+#coding_and_programming-question-div3 #q15_3_p,
+#coding_and_programming-question-div3 #q15_4_p,
+#coding_and_programming-question-div3 #q16_1_p,
+#coding_and_programming-question-div3 #q16_3_p,
+#coding_and_programming-question-div3 #q16_4_p,
+#coding_and_programming-question-div3 #q17_1_p,
+#coding_and_programming-question-div3 #q17_2_p,
+#coding_and_programming-question-div3 #q17_4_p,
+#coding_and_programming-question-div3 #q18_1_p,
+#coding_and_programming-question-div3 #q18_3_p,
+#coding_and_programming-question-div3 #q18_4_p,
+#coding_and_programming-question-div3 #q19_1_p,
+#coding_and_programming-question-div3 #q19_2_p,
+#coding_and_programming-question-div3 #q19_4_p,
+#coding_and_programming-question-div3 #q20_1_p,
+#coding_and_programming-question-div3 #q20_2_p,
+#coding_and_programming-question-div3 #q20_4_p,
+#coding_and_programming-question-div3 #q21_1_p,
+#coding_and_programming-question-div3 #q21_2_p,
+#coding_and_programming-question-div3 #q21_4_p
+{
+    display: inline;
+    color: red;
+}
+#catagory {
+   margin-top:100px ;
+}
+
+/* help */
+#help {
+   margin-top: 100px;
+   font-size: 30px;
+}
+#help-p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+#help-p li{ 
+    line-break: strict;
 }
