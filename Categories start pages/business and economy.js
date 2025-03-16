@@ -166,11 +166,11 @@ function business_and_economy_level1_submit() {
 
    business_and_economy_result = business_and_economy_l1_result;
   
-   if (funny_l1_result < 3) {
+   if  business_and_economy_l1_result < 3) {
     document.getElementById("funny_level1_nextlevel").disabled = true;
     document.getElementById("funny_level1_result").innerHTML = "Your score of level 1 is <b style='text-shadow:0 0 20px black;'>" + funny_l1_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + funny_result + "</b> out of 21. You failed the level. You can't go to the next level. Please try again.";
   }
-  if (funny_l1_result >= 3) {
+  if  business_and_economy_l1_result >= 3) {
     document.getElementById("funny_level1_nextlevel").disabled = false;
     document.getElementById("funny_level1_result").innerHTML = "Your score of level 1 is <b style='text-shadow:0 0 20px black;'>" + funny_l1_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + funny_result + "</b> out of 21. You passed the level. You can go to the next level.";
   }
@@ -354,11 +354,11 @@ function business_and_economy_level2_submit() {
   }
      
    business_and_economy_result += business_and_economy_l2_result;
- if (funny_l2_result < 3) {
+ if  business_and_economy_l2_result < 3) {
     document.getElementById("funny_level2_nextlevel").disabled = true;
     document.getElementById("funny_level2_result").innerHTML = "Your score of level 1 is <b style='text-shadow:0 0 20px black;'>" + funny_l2_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + funny_result + "</b> out of 21. You failed the level. You can't go to the next level. Please try again.";
   }
-  if (funny_l2_result >= 3) {
+  if  business_and_economy_l2_result >= 3) {
     document.getElementById("funny_level2_nextlevel").disabled = false;
     document.getElementById("funny_level2_result").innerHTML = "Your score of level 1 is <b style='text-shadow:0 0 20px black;'>" + funny_l2_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + funny_result + "</b> out of 21. You passed the level. You can go to the next level.";
   }
@@ -540,13 +540,11 @@ function business_and_economy_level3_submit() {
   
   business_and_economy_result += business_and_economy_l3_result;
   
-  if (business_and_economy_l3_result < 3) {
-    document.getElementById("business_and_economy_level2_nextlevel").disabled = true;
-    document.getElementById("business_and_economy_level3_result").innerHTML = "Your score is "+ business_and_economy_l3_result + "out of 7. You failed the level. You can't go to the next level. Please try again.";
+if  business_and_economy_l3_result < 3) {
+    document.getElementById("funny_level3_result").innerHTML = "Your score of level 1 is <b style='text-shadow:0 0 20px black;'>" + funny_l3_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + funny_result + "</b> out of 21. You failed the level. You can't go to the next level. Please try again.";
   }
-  if (business_and_economy_l3_result >= 3) {
-    document.getElementById("business_and_economy_level2_nextlevel").disabled = false;
-    document.getElementById("business_and_economy_level3_result").innerHTML = "Your score is "+ business_and_economy_l3_result + "out of 7. You passed the level. You can go to the next level.";
+  if  business_and_economy_l3_result >= 3) {
+    document.getElementById("funny_level3_result").innerHTML = "Your score of level 1 is <b style='text-shadow:0 0 20px black;'>" + funny_l3_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + funny_result + "</b> out of 21. You passed the level. You can go to the next level.";
   }
   
 }
