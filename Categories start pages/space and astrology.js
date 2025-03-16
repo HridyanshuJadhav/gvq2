@@ -354,15 +354,15 @@
      document.getElementById("q14_3_p").innerHTML = "&#x2713;";
   }
    space_and_astrology_result += space_and_astrology_l2_result;
-   if (space_and_astrology_l2_result < 3) {
-     document.getElementById("space_and_astrology_level2_nextlevel").disabled = true;
-     document.getElementById("space_and_astrology_level2_result").innerHTML = "Your score is "+ space_and_astrology_l2_result + "out of 7. You failed the level. You can't go to the next level. Please try again.";
-   }
-  if (space_and_astrology_l2_result >= 3) {
-     document.getElementById("space_and_astrology_level2_nextlevel").disabled = false;
-     document.getElementById("space_and_astrology_level2_result").innerHTML = "Your score is "+ space_and_astrology_l2_result + "out of 7. You passed the level. You can go to the next level.";
-   }
   
+  if (funny_l2_result < 3) {
+    document.getElementById("funny_level2_nextlevel").disabled = true;
+    document.getElementById("funny_level2_result").innerHTML = "Your score of level 2 is <b style='text-shadow:0 0 20px black;'>" + funny_l2_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + funny_result + "</b> out of 21. You failed the level. You can't go to the next level. Please try again.";
+  }
+  if (funny_l2_result >= 3) {
+    document.getElementById("funny_level2_nextlevel").disabled = false;
+    document.getElementById("funny_level2_result").innerHTML = "Your score of level 2 is <b style='text-shadow:0 0 20px black;'>" + funny_l2_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + funny_result + "</b> out of 21. You passed the level. You can go to the next level.";
+  }
  }
 
  function space_and_astrology_level2_reset() {
