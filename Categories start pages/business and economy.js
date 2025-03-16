@@ -196,7 +196,7 @@ function business_and_economy_level1_nextlevel() {
 
 
 function business_and_economy_level2_submit() {
-  let business_and_economy_l1_result
+  let business_and_economy_l2_result
   let q8 = document.querySelector('input[name= q8]:checked');
   if ( q8 ==  q8_1) {
     business_and_economy_l2_result += 1;
@@ -352,6 +352,9 @@ function business_and_economy_level2_submit() {
     document.getElementById("q14_4_p").innerHTML = "&#x2715;";
     document.getElementById("q14_3_p").innerHTML = "&#x2713;";
   }
+     
+   business_and_economy_result += business_and_economy_l2_result;
+  
   if (business_and_economy_l2_result < 3) {
     document.getElementById("business_and_economy_level2_nextlevel").disabled = true;
     document.getElementById("business_and_economy_level2_result").innerHTML = "Your score is "+ business_and_economy_l2_result + "out of 7. You failed the level. You can't go to the next level. Please try again.";
@@ -370,6 +373,8 @@ function business_and_economy_level2_reset() {
   document.getElementById("business_and_economy_level2_result").innerHTML = " ";
   document.querySelectorAll('input[type=radio]:checked').forEach(radio => radio.checked = false);
   document.getElementById("business_and_economy_level2_nextlevel").disabled = true;
+   business_and_economy_result -= business_and_economy_l2_result;
+   business_and_economy_l2_result = 0;
 }
 
 function business_and_economy_level2_nextlevel() {
@@ -378,10 +383,10 @@ function business_and_economy_level2_nextlevel() {
 }
 
 function business_and_economy_level3_submit() {
-  let business_and_economy_l1_result
+  let business_and_economy_l3_result
   let q15 = document.querySelector('input[name= q15]:checked');
   if ( q15 ==  q15_1) {
-    business_and_economy_l2_result += 0;
+    business_and_economy_l3_result += 0;
     document.getElementById("q15_1_p").innerHTML = "&#x2715;";
     document.getElementById("q15_3_p").innerHTML = "&#x2713;";
     }
@@ -533,6 +538,9 @@ function business_and_economy_level3_submit() {
     business_and_economy_l3_result += 1;
     document.getElementById("q21_4_p").innerHTML = "&#x2713;";
    }
+  
+  business_and_economy_result += business_and_economy_l3_result;
+  
   if (business_and_economy_l3_result < 3) {
     document.getElementById("business_and_economy_level2_nextlevel").disabled = true;
     document.getElementById("business_and_economy_level3_result").innerHTML = "Your score is "+ business_and_economy_l3_result + "out of 7. You failed the level. You can't go to the next level. Please try again.";
@@ -551,7 +559,8 @@ function business_and_economy_level3_reset() {
  };
   document.getElementById("business_and_economy_level3_result").innerHTML = " ";
   document.querySelectorAll('input[type=radio]:checked').forEach(radio => radio.checked = false);
- 
+  business_and_economy_result -= business_and_economy_l3_result;
+   business_and_economy_l3_result = 0;
 }
 
 
