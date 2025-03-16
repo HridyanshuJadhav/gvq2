@@ -1312,4 +1312,40 @@ footer{
    margin-top:100px ;
 }
 
+.level_submit,.level_reset,.level_save{
+    background-color:white;
+    border: none;
+    border-radius:3px;
+    color:black;
+    display: inline;
+    margin-left:10px;
+   
+}
+
+.level_nextlevel {
+    background-color:white;
+    padding: 0.7% 1.4% 0.7% 1.4%;
+    border: none;
+    border-radius:3px;
+    color: black;
+    display: inline;
+    margin-left:1120px;
+    
+}
+.level_submit {
+   padding:0.7% 1.6% 0.7% 1.6%; 
+}
+.level_submit:hover,.level_reset:hover, .level_save:hover,.level_nextlevel:hover {
+    background: #e64a19;
+    transform: scale(1.05);
+    color: white;
+}
+.level_reset
+{
+    padding:0.7% 1.8% 0.7% 1.8%; 
+ }
+ .level_save {
+    padding:0.7% 2% 0.7% 2%; 
+ } 
+
 
