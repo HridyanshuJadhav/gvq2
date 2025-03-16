@@ -342,13 +342,13 @@ function sports_level2_submit() {
     document.getElementById("q14_3_p").innerHTML = "&#x2713;";
   }
     sports_result +=  sports_l2_result;
-  if (sports_l2_result < 3) {
-    document.getElementById("sports_level2_nextlevel").disabled = true;
-    document.getElementById("sports_level2_result").innerHTML = "Your score is "+ sports_l2_result + "out of 7. You failed the level. You can't go to the next level. Please try again.";
+    if (funny_l2_result < 3) {
+    document.getElementById("funny_level2_nextlevel").disabled = true;
+    document.getElementById("funny_level2_result").innerHTML = "Your score of level 1 is <b style='text-shadow:0 0 20px black;'>" + funny_l2_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + funny_result + "</b> out of 21. You failed the level. You can't go to the next level. Please try again.";
   }
- if (sports_l2_result >= 3) {
-    document.getElementById("sports_level2_nextlevel").disabled = false;
-    document.getElementById("sports_level2_result").innerHTML = "Your score is "+ sports_l2_result + "out of 7. You passed the level. You can go to the next level.";
+  if (funny_l2_result >= 3) {
+    document.getElementById("funny_level2_nextlevel").disabled = false;
+    document.getElementById("funny_level2_result").innerHTML = "Your score of level 1 is <b style='text-shadow:0 0 20px black;'>" + funny_l2_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + funny_result + "</b> out of 21. You passed the level. You can go to the next level.";
   }
  
   
