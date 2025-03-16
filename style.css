@@ -315,6 +315,17 @@ footer {
 
 
 /* Help section */
+#help {
+   margin-top: 100px;
+   font-size: 30px;
+}
+#help-p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+#help-p li{ 
+    line-break: strict;
+}
 
 
 /*  signup section */
@@ -1301,15 +1312,4 @@ footer{
    margin-top:100px ;
 }
 
-/* help */
-#help {
-   margin-top: 100px;
-   font-size: 30px;
-}
-#help-p{
-    margin-top: 10px;
-    font-size: 20px;
-}
-#help-p li{ 
-    line-break: strict;
-}
+
