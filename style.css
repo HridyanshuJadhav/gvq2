@@ -420,7 +420,7 @@ justify-content: space-evenly;
     transform: scale(1.05);
 }
 
-#signup-bottomtext a:hover{
+#signup-bottomtext-a:hover{
     transform: scale(1.05);
     font-size: 17px;  
 }
@@ -430,7 +430,7 @@ justify-content: space-evenly;
 }
 
 
-#signup-bottomtext a {
+#signup-bottomtext-a {
     font-weight: bold;
     font-family:'poppins',sans-serif;
     font-size: large;
@@ -447,11 +447,6 @@ justify-content: space-evenly;
     color: black;
    }
 
-
-#signup-bottomtext a{
-    color:orangered;
-    text-decoration: none;
-}
 /* Login */
 #login_body{
     display:flex;
