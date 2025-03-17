@@ -420,17 +420,17 @@ justify-content: space-evenly;
     transform: scale(1.05);
 }
 
-#signup-div5 a:hover{
+#signup-bottomtext a:hover{
     transform: scale(1.05);
     font-size: 17px;  
 }
-#signup-div5{
+#signup-bottomtext{
     display: inline;
     margin-top: 20px;
 }
 
 
-#signup-div5 a {
+#signup-bottomtext a {
     font-weight: bold;
     font-family:'poppins',sans-serif;
     font-size: large;
@@ -438,7 +438,7 @@ justify-content: space-evenly;
     color:orangered;
     
    }
-   #signup-div5 p{
+   #signup-bottomtext p{
     font-weight: bold;
     font-family:'poppins',sans-serif;
     font-size: large;
@@ -448,7 +448,7 @@ justify-content: space-evenly;
    }
 
 
-#signup-div5 a{
+#signup-bottomtext a{
     color:orangered;
     text-decoration: none;
 }
