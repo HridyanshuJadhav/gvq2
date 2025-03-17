@@ -334,7 +334,7 @@ footer {
    margin: 0;
 }
 
-#signup-div1{
+#signup-text{
     width:60%;
     height:100vh;
     font-family:'poppins',sans-serif;
@@ -371,7 +371,7 @@ footer {
     box-shadow: -1px -1px 80px 1px gray;
 }
 
-#signup-div4{
+#signup-div1{
     background-color: whitesmoke;
     width:40%;
     height:100vh;
@@ -379,7 +379,7 @@ footer {
     padding-right: 35px;
 }
 
-#signup-div3{
+#signup-form{
 display:flex;
 flex-direction: column;
 justify-content: space-evenly;
@@ -394,7 +394,7 @@ justify-content: space-evenly;
     color: black;
 }
 
-#signup-div3 input{
+#signup-form input{
     height:48px;
     border-radius: 3px;
     border:solid, black, 1px;
@@ -403,7 +403,7 @@ justify-content: space-evenly;
     font-size: 15px;
     padding-left: 18px;  
 }
-#signup-div3 button{
+#signup-form button{
     height:48px;
     border-radius: 3px;
     border:0px;
@@ -415,7 +415,7 @@ justify-content: space-evenly;
     border-radius: 5px;
 }
 
-#signup-div3 button:hover{
+#signup-form button:hover{
     background: #e64a19;
     transform: scale(1.05);
 }
