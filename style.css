@@ -93,6 +93,10 @@ nav {
     animation-delay: 1s;
 }  
 
+#home-p3 {
+    margin-top: 8px;
+}
+
   @keyframes homewelcome
 { from {  top:80px;
     opacity: 0;
@@ -141,7 +145,7 @@ to {
 }
 
 #home-p4 {
-    margin-top: -1%; 
+    margin-top: -1.4%; 
 }
 
 #home-button1:hover {
@@ -212,16 +216,17 @@ to {
     }
    }
 footer {
-    color: white;
     font-size: 18px;
-    text-align: center;
     background-color: rgba(0, 0, 0, 0.6);
-    padding-top: 0px;
-    padding-bottom: 5px;
-    margin-left:-1%;
-    margin-right:-1%;
-    margin-top:155px;
-}   
+    margin-left: -1%;
+    margin-right: -1%;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 0px 2px;
+    height: 4.6rem;
+    overflow: hidden;
+} 
   
 
 /* Aboust us section */
