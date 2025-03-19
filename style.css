@@ -222,12 +222,14 @@ footer {
     margin-right: -1%;
     position: absolute;
     width: 100%;
-    bottom: 0;
     padding: 0px 2px;
     height: 4.6rem;
     overflow: hidden;
 } 
-  
+
+#home-footer {
+        bottom: 0;
+}
 
 /* Aboust us section */
 #aboutus-firstline {
