@@ -318,10 +318,46 @@ footer {
     transform: scale(1.09);
 }
 
-/* Feedback section */
+/* FEEDBACK SECTION */
+#feedback-div{ 
+    max-width:430px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 95px auto;
+    box-shadow: black 0 0 11px 1px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
 
+#feedback-div input, #feedback-div textarea{
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 1rem;
+}
 
-/* Help section */
+#feedback-div textarea{ 
+    resize: none;
+    overflow-y: scroll;
+}
+
+#feedback-div button{
+    border-radius: 5px;
+    border: 0px;
+    padding: 12px 20px;
+    background: #ff5722;
+    font-size: 16px;
+    color: white;
+}
+
+#feedback-div button:hover{
+    background: #e64a19;
+    transform: scale(1.05);
+}
+
+/* HELP SECTION */
 #help {
    margin-top: 100px;
    font-size: 30px;
