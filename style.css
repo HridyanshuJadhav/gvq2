@@ -335,13 +335,11 @@ footer {
     border-radius: 5px;
     border: 0px;
     font-size: 1rem;
-    
 }
 
 #feedback-div textarea{ 
     resize: none;
     overflow-y: scroll;
-    
 }
 
 #feedback-div button{
