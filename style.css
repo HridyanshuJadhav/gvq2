@@ -258,6 +258,79 @@ footer {
     margin-right: 2rem;
 }
 
+#loader-maindiv {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    margin-top: -6rem;
+    margin-left: -10px;
+    padding-left: 10px;
+    padding-top: 5rem;
+}
+
+#loader-subdiv {
+    margin: 10px auto;
+    width: 10rem;
+    height: 10rem;
+    padding-top: 14%;
+}
+
+#loader {
+    background: white;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    opacity: 0;
+    box-shadow: 0 0 10px black;
+    border-radius: 10%;
+    animation: loading 2s infinite;
+}
+
+#loader:nth-child(1){
+    animation-delay: 0s;
+}
+#loader:nth-child(2){
+    animation-delay: 0.2s;
+}
+#loader:nth-child(3){
+    animation-delay: 0.4s;
+}
+#loader:nth-child(4){
+    animation-delay: 0.6s;
+}
+#loader:nth-child(5){
+    animation-delay: 0.8s;
+}
+#loader:nth-child(6){
+    animation-delay: 1s;
+}
+#loader:nth-child(7){
+    animation-delay: 1.2s;
+}
+#loader:nth-child(8){
+    animation-delay: 1.4s;
+}
+#loader:nth-child(9){
+    animation-delay: 1.6s;
+}
+
+@keyframes loading {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 /* CONTACT US SCTION */
 #contactus-div {
     max-width: 430px;
