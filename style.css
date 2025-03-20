@@ -1,4 +1,4 @@
-/* Home page section */
+/* HOME PAGE SECTION */
 ::selection{
     background-color:#121212 ;
     color: #ffcc00;
@@ -11,6 +11,7 @@ body {
     background: linear-gradient(135deg,#2193b0 50%,#6dd5ed 50% );
     background-attachment: fixed;
 }
+
 nav {
     position: fixed;  
     top:0;  
@@ -70,8 +71,6 @@ nav {
     /* animation-delay: 0.1s; */
 }
     
-    
-
 #home-p1, #home-p2, #home-p3, #home-p4 {
     display: flex; 
     justify-content: center;
@@ -95,6 +94,10 @@ nav {
 
 #home-p3 {
     margin-top: 8px;
+}
+
+#home-p4 {
+    margin-top: -1.4%; 
 }
 
   @keyframes homewelcome
@@ -125,8 +128,7 @@ to {
     border: none;
     border-radius:5px;
     color: black;
-    display: block;
-    
+    display: block; 
 }
 
  #home-button{
@@ -137,15 +139,10 @@ to {
     animation-duration: 3s; 
     animation-iteration-count: infinite;
     animation-fill-mode: forwards; 
-
 }     
 
 #home-button:hover {
     color: white;
-}
-
-#home-p4 {
-    margin-top: -1.4%; 
 }
 
 #home-button1:hover {
@@ -165,8 +162,7 @@ to {
     100% {
         top: 90px;
     }
-  }
-
+}
 
 .confetti {
     height: 10px;
@@ -181,6 +177,7 @@ to {
     margin-left: 16.5%;
     z-index: -1;
  }
+
  #confetti1 {
     background-color: rgb(143, 236, 145);
     animation-delay: 0.5s;
@@ -204,6 +201,7 @@ to {
     background-color: rgb(159, 86, 177);
     animation-delay: 2.5s;
  }
+
 @keyframes drop{
     from {  top:55px;
           opacity: 1;
@@ -214,7 +212,8 @@ to {
         opacity: 0.2;
         transform: rotateZ(100deg);
     }
-   }
+}
+
 footer {
     font-size: 18px;
     background-color: rgba(0, 0, 0, 0.6);
@@ -231,7 +230,7 @@ footer {
         bottom: 0;
 }
 
-/* Aboust us section */
+/* ABOUT US SECTION */
 #aboutus-firstline {
     margin-top: 8rem;
 }
@@ -259,7 +258,7 @@ footer {
     margin-right: 2rem;
 }
 
-/* Contact us section */
+/* CONTACT US SCTION */
 #contactus-div {
     max-width: 430px;
     padding: 20px;
@@ -318,46 +317,10 @@ footer {
     transform: scale(1.09);
 }
 
-/* FEEDBACK SECTION */
-#feedback-div{ 
-    max-width:430px;
-    background-color: rgba(0, 0, 0, 0.4);
-    margin: 95px auto;
-    box-shadow: black 0 0 11px 1px;
-    border-radius: 10px;
-    text-align: center;
-    padding: 20px;
-}
+/* Feedback section */
 
-#feedback-div input, #feedback-div textarea{
-    width: 95%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 0px;
-    font-size: 1rem;
-}
 
-#feedback-div textarea{ 
-    resize: none;
-    overflow-y: scroll;
-}
-
-#feedback-div button{
-    border-radius: 5px;
-    border: 0px;
-    padding: 12px 20px;
-    background: #ff5722;
-    font-size: 16px;
-    color: white;
-}
-
-#feedback-div button:hover{
-    background: #e64a19;
-    transform: scale(1.05);
-}
-
-/* HELP SECTION */
+/* Help section */
 #help {
    margin-top: 100px;
    font-size: 30px;
@@ -371,7 +334,7 @@ footer {
 }
 
 
-/*  signup section */
+/* SIGNUP SECTION */
 #signup_body{
     display:flex;
    margin: 0;
@@ -472,7 +435,6 @@ justify-content: space-evenly;
     margin-top: 20px;
 }
 
-
 #signup-bottomtext-a {
     font-weight: bold;
     font-family:'poppins',sans-serif;
@@ -490,7 +452,7 @@ justify-content: space-evenly;
     color: black;
    }
 
-/* Login */
+/* LOGIN SECTION */
 #login_body{
     display:flex;
    margin: 0;
@@ -615,9 +577,7 @@ justify-content: space-evenly;
     text-decoration: none;
 }
 
-
-
-/* Personal dashboard section */
+/* PERSONAL DASHBOARD SECTION */
 #pd-div1 {
     background: white;
     color: black;
@@ -683,7 +643,7 @@ justify-content: space-evenly;
     transform: scale(1.05);
 }
 
-/* Start category section*/
+/* START CATEGORY SECTION*/
 #start-category{
     text-align: center;
     margin-top: 105px;
@@ -723,6 +683,46 @@ justify-content: space-evenly;
     font-size:25px;
 }
 /* CATEGORIES START SECTION */
+#catagory {
+   margin-top:100px ;
+}
+
+.level_submit,.level_reset,.level_save{
+    background-color:white;
+    border: none;
+    border-radius:3px;
+    color:black;
+    display: inline;
+    margin-left:10px;
+   
+}
+
+.level_nextlevel {
+    background-color:white;
+    padding: 0.7% 1.4% 0.7% 1.4%;
+    border: none;
+    border-radius:3px;
+    color: black;
+    display: inline;
+    margin-left:1120px;
+    
+}
+.level_submit {
+   padding:0.7% 1.6% 0.7% 1.6%; 
+}
+.level_submit:hover,.level_reset:hover, .level_save:hover,.level_nextlevel:hover {
+    background: #e64a19;
+    transform: scale(1.05);
+    color: white;
+}
+.level_reset
+{
+    padding:0.7% 1.8% 0.7% 1.8%; 
+ }
+ .level_save {
+    padding:0.7% 2% 0.7% 2%; 
+ } 
+
     /* Religious category section */
 #religious-h2{
     margin-top: 8rem;
@@ -921,7 +921,7 @@ justify-content: space-evenly;
   text-shadow: 0 0 20px black;
 }
 
-/* sports */
+/* Sports category section */
 #sports-question-div1 #q1_1_p,
 #sports-question-div1 #q2_2_p,
 #sports-question-div1 #q3_2_p,
@@ -1016,7 +1016,7 @@ justify-content: space-evenly;
     color: red;
 }
 
-/* business and economy */
+/* Business and economy catgory section*/
 #business_and_economy-question-div1 #q1_2_p,
 #business_and_economy-question-div1 #q2_2_p,
 #business_and_economy-question-div1 #q3_3_p,
@@ -1112,7 +1112,7 @@ justify-content: space-evenly;
 }
 
 
-/* space and astrology */
+/* Space and astrology category section */
 #space_and_astrology-question-div1 #q1_3_p, 
 #space_and_astrology-question-div1 #q2_1_p, 
 #space_and_astrology-question-div1 #q3_2_p, 
@@ -1134,12 +1134,10 @@ justify-content: space-evenly;
 #space_and_astrology-question-div3 #q19_2_p, 
 #space_and_astrology-question-div3 #q20_2_p, 
 #space_and_astrology-question-div3 #q21_3_p 
-
 {
     display: inline;
     color: green;
 }
-
 
 #space_and_astrology-question-div1 #q1_1_p,
 #space_and_astrology-question-div1 #q1_2_p, 
@@ -1208,7 +1206,8 @@ justify-content: space-evenly;
     display: inline;
     color: red;
 }
-/* coding and programming */
+
+/* Coding and programming category section*/
 #coding_and_programming-question-div1 #q1_3_p,
 #coding_and_programming-question-div1 #q2_3_p,
 #coding_and_programming-question-div1 #q3_3_p,
@@ -1302,44 +1301,3 @@ justify-content: space-evenly;
     display: inline;
     color: red;
 }
-#catagory {
-   margin-top:100px ;
-}
-
-.level_submit,.level_reset,.level_save{
-    background-color:white;
-    border: none;
-    border-radius:3px;
-    color:black;
-    display: inline;
-    margin-left:10px;
-   
-}
-
-.level_nextlevel {
-    background-color:white;
-    padding: 0.7% 1.4% 0.7% 1.4%;
-    border: none;
-    border-radius:3px;
-    color: black;
-    display: inline;
-    margin-left:1120px;
-    
-}
-.level_submit {
-   padding:0.7% 1.6% 0.7% 1.6%; 
-}
-.level_submit:hover,.level_reset:hover, .level_save:hover,.level_nextlevel:hover {
-    background: #e64a19;
-    transform: scale(1.05);
-    color: white;
-}
-.level_reset
-{
-    padding:0.7% 1.8% 0.7% 1.8%; 
- }
- .level_save {
-    padding:0.7% 2% 0.7% 2%; 
- } 
-
-
