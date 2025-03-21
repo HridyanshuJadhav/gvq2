@@ -175,7 +175,7 @@ to {
     animation-iteration-count: infinite;
     animation-fill-mode: forwards; 
     margin-left: 16.5%;
-    z-index: -1;
+   
  }
 #confetti:nth-child(1){
    background-color: rgb(143, 236, 145);
