@@ -70,6 +70,9 @@ nav {
     animation: homewelcome 5s forwards ease-in-out;
     /* animation-delay: 0.1s; */
 }
+#home-welcome p {
+margin:0;
+}
     
 #home-p1, #home-p2, #home-p3, #home-p4 {
     display: flex; 
