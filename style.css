@@ -120,7 +120,7 @@ to {
  }
 } 
 
-#home-btn { 
+#home-btn-a { 
     background-color: white;
     margin-top:60px;
     margin-left:45%;
@@ -131,7 +131,7 @@ to {
     display: block; 
 }
 
- #home-btn-a{
+ #home-btn{
     text-decoration: none;
     color: black;
     position: relative;
@@ -145,7 +145,7 @@ to {
     color: white;
 }
 
-#home-btn-a:hover {
+#home-btn:hover {
     
     background-color:#ff5722;
     color: white;
