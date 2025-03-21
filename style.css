@@ -120,7 +120,7 @@ to {
  }
 } 
 
-#home-button1 { 
+#home-btn { 
     background-color: white;
     margin-top:60px;
     margin-left:45%;
@@ -131,7 +131,7 @@ to {
     display: block; 
 }
 
- #home-button{
+ #home-btn {
     text-decoration: none;
     color: black;
     position: relative;
@@ -141,11 +141,11 @@ to {
     animation-fill-mode: forwards; 
 }     
 
-#home-button:hover {
+#home-btn-a:hover {
     color: white;
 }
 
-#home-button1:hover {
+#home-btn-a:hover {
     
     background-color:#ff5722;
     color: white;
