@@ -795,6 +795,14 @@ justify-content: space-evenly;
     margin-top: -11rem;
 }
 
+#math&logic{
+    margin-top: -11rem;
+}
+
+#space&astrology{
+    margin-top: -11rem;
+}
+
 #startcategory-div1 div{
     text-align: center;
     font-size:25px;
