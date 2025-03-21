@@ -57,13 +57,10 @@ nav {
 .nav-element:hover {
     color: #ff5722;
 }
-/* #home-text {
- margin-top:150px;
-} */
 
 #home-welcome {
     margin-top:80px; 
-    font-size: 3vw;
+    font-size: 2.6rem;
     text-align: center;
     font-weight: bold;
     position: relative;
