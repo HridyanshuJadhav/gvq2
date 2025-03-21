@@ -787,6 +787,10 @@ justify-content: space-evenly;
     width: 100%;
 }
 
+#gk-img{
+    margin-top: -11rem;
+}
+
 #startcategory-div1 div{
     text-align: center;
     font-size:25px;
