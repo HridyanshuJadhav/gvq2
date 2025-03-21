@@ -177,27 +177,28 @@ to {
     margin-left: 16.5%;
     z-index: -1;
  }
-
- #confetti1 {
-    background-color: rgb(143, 236, 145);
+#confetti:nth-child(1){
+   background-color: rgb(143, 236, 145);
     animation-delay: 0.5s;
- }
+}
+
+
  
- #confetti2 {
+ #confetti:nth-child(2){
      background-color: rgb(228, 49, 49);
      animation-delay: 1s;
   }
   
-  #confetti3 {
+  #confetti:nth-child(3) {
      background-color: rgb(211, 237, 13);
      animation-delay: 1.5s;
   }
   
-  #confetti4 {
+  #confetti:nth-child(4) {
      background-color: rgb(177, 39, 119);
      animation-delay: 2s;
   }
-  #confetti5 {
+  #confetti:nth-child(5) {
     background-color: rgb(159, 86, 177);
     animation-delay: 2.5s;
  }
