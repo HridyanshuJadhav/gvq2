@@ -131,7 +131,7 @@ to {
     display: block; 
 }
 
- #home-btn {
+ #home-btn-a{
     text-decoration: none;
     color: black;
     position: relative;
@@ -164,7 +164,7 @@ to {
     }
 }
 
-.confetti {
+#confetti {
     height: 10px;
     width: 10px;
     display: inline-block;
