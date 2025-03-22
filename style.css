@@ -12,7 +12,7 @@ body {
     background-attachment: fixed;
 }
 
-nav {
+#navbar {
     position: fixed;  
     top:0;  
     margin-top:-0.9rem;  
@@ -39,16 +39,27 @@ nav {
 
 #gvq-logo {
     height: 45px;
-    margin-top:-30px;
-    margin-left:-55px;
+    margin-top: -30px;
+    margin-left: 62px;
 
 }
+
 #gvq-text {
     font-weight: 600;
-    margin-left: -60px;
+    margin-left: 40px;
     font-size: 25px;
     margin-top: -27px;
-    }
+    max-width: 16rem;
+    padding-right: 28px;
+}
+
+#navbar nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 65%;
+    margin-left: 38px;
+}
+
 .nav-element {
     color: white;
     text-decoration: none;
@@ -231,7 +242,6 @@ footer {
 #home-footer {
         bottom: 0;
 }
-
 /* ABOUT US SECTION */
 #aboutus-firstline {
     margin-top: 8rem;
