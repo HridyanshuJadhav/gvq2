@@ -210,9 +210,9 @@ to {
          transform: rotateZ(0deg);
          }
     to {
-        top: 10.6rem;
+        top: 10.2rem;
         opacity: 0.2;
-        transform: rotateZ(100deg);
+        transform: rotateZ(360deg);
     }
 }
 
