@@ -46,18 +46,17 @@ body {
 
 #gvq-text {
     font-weight: 600;
-    margin-left: 40px;
-    font-size: 25px;
-    margin-top: -27px;
+    margin-left: 26px;
+    font-size: 13px;
+    margin-top: -42px;
     max-width: 16rem;
-    padding-right: 28px;
 }
 
 #navbar nav{
     display: flex;
     justify-content: space-evenly;
     width: 65%;
-    margin-left: 38px;
+    margin-left: 17px;
 }
 
 .nav-element {
