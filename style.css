@@ -818,6 +818,10 @@ justify-content: space-evenly;
     margin-top: -3.4rem;
 }
 
+#startcategory p:hover{
+    transform: scale(1.05);
+}
+
 #startcategory-div1 div{
     text-align: center;
     font-size:25px;
