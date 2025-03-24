@@ -3,6 +3,10 @@ setTimeout(() => {
 }, 3000);
 
 window.onload = function() {
-    window.scrollTo(0, 0);
+    window.scrollTo(
+        {
+            top:0;
+        }
+    );
 };
 
