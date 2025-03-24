@@ -445,11 +445,12 @@ footer {
    margin-top: 100px;
    font-size: 30px;
 }
-#help-p{
+#help-ul{
     margin-top: 10px;
     font-size: 20px;
+    padding: 1rem 5rem;
 }
-#help-p li{ 
+#help-ul li{ 
     line-break: strict;
 }
 
