@@ -818,7 +818,7 @@ justify-content: space-evenly;
     margin-top: -3.4rem;
 }
 
-#startcategory :hover{
+#startcategory a:hover{
     transform: scale(1.05);
 }
 
