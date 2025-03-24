@@ -822,10 +822,6 @@ justify-content: space-evenly;
     transform: scale(1.05);
 }
 
-#startcategory p{
-    padding: 10px;
-}
-
 #startcategory-div1 div{
     text-align: center;
     font-size:25px;
