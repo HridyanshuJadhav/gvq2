@@ -529,9 +529,10 @@ footer {
 }
 
 #signup-form{
-display:flex;
-flex-direction: column;
-justify-content: space-evenly;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
 }
 
 #signup-h2{
