@@ -635,8 +635,7 @@ footer {
     background-color: white;
     height:25rem;
     border-radius: 16px;
-    margin-top: -10px;
-    box-shadow: -1px -1px 80px 1px gray;
+   box-shadow: -1px -1px 80px 1px gray;
 }
 
 #login-div1{
