@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (password_verify($login_password, $row['signup_password'])) {
             $_SESSION['user_id'] = $row['id'];
             $_SESSION['user_name'] = $row['signup_name'];
-            echo "<script>alert('Login Successful! Redirecting to Dashboard...'); window.location.href='/gvq2/Personal dashboard/personaldashboard.html';</script>";
+            echo "<script>alert('Login Successful! Redirecting to Dashboard...'); window.location.href='/gvq2/Personal dashboard page/personaldashboard.html';</script>";
             exit();
         } else {
             echo "<script>alert('Incorrect Password! Try again.'); window.location.href='/gvq2/index.html';</script>";
