@@ -602,7 +602,7 @@ footer {
    margin: 0;
 }
 
-#login-div1{
+#login-text{
     width:60%;
     height:100vh;
     font-family:'poppins',sans-serif;
@@ -639,7 +639,7 @@ footer {
     box-shadow: -1px -1px 80px 1px gray;
 }
 
-#login-div4{
+#login-div1{
     background-color: whitesmoke;
     width:40%;
     height:100vh;
@@ -647,10 +647,11 @@ footer {
     padding-right: 35px;
 }
 
-#login-div3{
-display:flex;
-flex-direction: column;
-justify-content: space-evenly;
+#login-form{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
 }
 
 #login-h2{
@@ -662,7 +663,7 @@ justify-content: space-evenly;
     color: black;
 }
 
-#login-div3 input{
+#login-form input{
     height:48px;
     border-radius: 3px;
     border:solid, black, 1px;
@@ -671,7 +672,7 @@ justify-content: space-evenly;
     font-size: 15px;
     padding-left: 18px;  
 }
-#login-div3 button{
+#login-form button{
     height:48px;
     border-radius: 3px;
     border:0px;
@@ -683,30 +684,29 @@ justify-content: space-evenly;
     border-radius: 5px;
 }
 
-#login-div3 button:hover{
+#login-form button:hover{
     background: #e64a19;
     transform: scale(1.05);
 }
 
-#login-div5 a:hover{
+#login-bottomtext-a:hover{
     transform: scale(1.05);
     font-size: 17px;  
 }
-#login-div5{
+#login-bottomtext{
     display: inline;
     margin-top: 20px;
 }
 
-
-#login-div5 a {
+#login-bottomtext-a {
     font-weight: bold;
     font-family:'poppins',sans-serif;
     font-size: large;
     text-decoration: none;
-    color:orangered;
+    color:#ff5722;
     
    }
-   #login-div5 p{
+   #login-bottomtext p{
     font-weight: bold;
     font-family:'poppins',sans-serif;
     font-size: large;
@@ -714,12 +714,6 @@ justify-content: space-evenly;
     display: inline;
     color: black;
    }
-
-
-#login-div5 a{
-    color:orangered;
-    text-decoration: none;
-}
 
 /* PERSONAL DASHBOARD SECTION */
 #pd-div1 {
