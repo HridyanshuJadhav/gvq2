@@ -658,7 +658,7 @@ footer {
     text-align: center;
     font-family:'poppins',sans-serif;
     margin-top: 100px;
-    padding-top: 25px;
+    padding-top: 90px;
     font-weight: 400px;
     color: black;
 }
@@ -714,6 +714,7 @@ footer {
     display: inline;
     color: black;
    }
+  
 
 /* PERSONAL DASHBOARD SECTION */
 #pd-div1 {
