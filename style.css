@@ -887,8 +887,7 @@ footer {
     border-radius:3px;
     color: black;
     display: inline;
-    margin-left:1120px;
-    
+    float: right;
 }
 .level_submit {
    padding:0.7% 1.6% 0.7% 1.6%; 
