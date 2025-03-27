@@ -7,14 +7,6 @@ $dbname = "gvq_major";
 
 $con = mysqli_connect($server, $username, $password, $dbname);
 
-if(!$con){
-    echo "Not connected";
-}
-
-else{
-    echo "Connected";
-}
-
 //start
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $signup_name = $_POST['signup_name'];
@@ -35,7 +27,7 @@ $sql = "INSERT INTO userdata (signup_name, signup_email, signup_password)
 $result = mysqli_query($con, $sql);
 
 if ($result) {
-    echo "<script>alert('Data Submitted Successfully!'); widnoe.location.href='/gvq2/login signup page/login.html'</script>";
+    echo "<script>alert('Data Submitted Successfully!'); window.location.href='/gvq2/login signup page/login.html'</script>";
 } else {
     echo "Error: " . mysqli_error($con);
 }
