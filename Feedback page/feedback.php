@@ -19,7 +19,7 @@ $sql = "INSERT INTO feedback (feedback_name, feedback_email, feedback_textarea)
 $result = mysqli_query($con, $sql);
 
 if ($result) {
-    echo "Data Submitted Successfully!";
+    echo "<script>alert('Data Submitted Successfully!'); window.location.href='/gvq2/Feedback page/feedback.html';</script>";
 } else {
     echo "Error: " . mysqli_error($con);
 }
