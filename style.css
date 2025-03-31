@@ -1211,6 +1211,9 @@ footer {
 }
 
 /* START CATEGORY SECTION*/
+a:active {
+    text-decoration: none;
+}
 
 #startcategory-div1 {
     margin-top: 50px;
