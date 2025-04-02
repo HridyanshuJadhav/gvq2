@@ -14,7 +14,7 @@ $contactus_email = $_POST['contactus_email'];
 $contactus_message = $_POST['contactus_message'];
 
 $sql = "INSERT INTO contactus (contactus_name, contactus_email, contactus_message) 
-        VALUES ('$contactus_name', '$contactus_email', '$contactus_message')";
+       VALUES ('$contactus_name', '$contactus_email', '$contactus_message')";
 
 $result = mysqli_query($con, $sql);
 
