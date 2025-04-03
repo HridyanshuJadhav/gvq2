@@ -8,6 +8,7 @@ let gk_result = 0;
 let gk_l1_result = 0;
 let gk_l2_result = 0;
 let gk_l3_result = 0;
+
 function gk_level1_submit(){
   gk_l1_result = 0;
   let q1 = document.querySelector('input[name=q1]:checked');
@@ -192,7 +193,7 @@ function gk_level1_nextlevel(){
 }
 
 
-//gk Level 2
+//Gk Level 2
 function gk_level2_submit(){
   gk_l2_result = 0;
   let q8 = document.querySelector('input[name=q8]:checked');
@@ -377,8 +378,7 @@ function gk_level2_nextlevel(){
 }
 
 
-
-//gk Level 3
+//Gk Level 3
 function gk_level3_submit(){
   gk_l3_result = 0;
   let q15 = document.querySelector('input[name=q15]:checked');
@@ -528,7 +528,6 @@ function gk_level3_submit(){
     document.getElementById("q21_2_p").innerHTML = "&#x2713;";
   }
 
-
   gk_result += gk_l3_result;
 
   if (gk_l3_result < 3) {
@@ -547,7 +546,6 @@ function gk_level3_reset(){
   };
   document.getElementById("gk_level3_result").innerHTML = " ";
   document.querySelectorAll('input[type=radio]:checked').forEach(radio => radio.checked = false);
-  document.getElementById("gk_level3_nextlevel").disabled = true;
   gk_result -= gk_l3_result;
   gk_l3_result = 0;;
 }
