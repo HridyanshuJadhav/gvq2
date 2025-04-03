@@ -1,4 +1,4 @@
-document.getElementById("gk-question-div2").hidden = true;
+document.getElementById("gk-question-div2").hidden = true;a
 document.getElementById("gk-question-div3").hidden = true;
 
 document.getElementById("gk_level1_nextlevel").disabled = true;
