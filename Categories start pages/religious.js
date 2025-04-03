@@ -8,6 +8,7 @@ let religious_result = 0;
 let religious_l1_result = 0;
 let religious_l2_result = 0;
 let religious_l3_result = 0;
+
 function religious_level1_submit(){
   religious_l1_result = 0;
   let q1 = document.querySelector('input[name=q1]:checked');
@@ -98,7 +99,7 @@ function religious_level1_submit(){
   if (q5 == q5_1) {
     religious_l1_result += 1;
     document.getElementById("q5_1_p").innerHTML = "&#x2713;";
-}
+  }
   if (q5 == q5_2) {
     religious_l1_result += 0;
     document.getElementById("q5_2_p").innerHTML = "&#x2715;";
@@ -192,7 +193,7 @@ function religious_level1_nextlevel(){
 }
 
 
-//religious Level 2
+//Religious Level 2
 function religious_level2_submit(){
   religious_l2_result = 0;
   let q8 = document.querySelector('input[name=q8]:checked');
@@ -377,7 +378,7 @@ function religious_level2_nextlevel(){
 }
 
 
-//religious Level 3
+//Religious Level 3
 function religious_level3_submit(){
   religious_l3_result = 0;
   let q15 = document.querySelector('input[name=q15]:checked');
@@ -530,10 +531,10 @@ function religious_level3_submit(){
   religious_result += religious_l3_result;
 
   if (religious_l3_result < 3) {
-    document.getElementById("religious_level3_result").innerHTML = "Your score of level 1 is <b style='text-shadow:0 0 20px black;'>" + religious_l3_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + religious_result + "</b> out of 21. You failed the level. You can't go to the next level. Please try again.";
+    document.getElementById("religious_level3_result").innerHTML = "Your score of level 3 is <b style='text-shadow:0 0 20px black;'>" + religious_l3_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + religious_result + "</b> out of 21. You failed the level. You can't go to the next level. Please try again.";
   }
   if (religious_l3_result >= 3) {
-    document.getElementById("religious_level3_result").innerHTML = "Your score of level 1 is <b style='text-shadow:0 0 20px black;'>" + religious_l3_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + religious_result + "</b> out of 21. You passed the level. You can go to the next level.";
+    document.getElementById("religious_level3_result").innerHTML = "Your score of level 3 is <b style='text-shadow:0 0 20px black;'>" + religious_l3_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + religious_result + "</b> out of 21. You passed the level. You can go to the next level.";
   }
 }
 
@@ -545,7 +546,6 @@ function religious_level3_reset(){
   };
   document.getElementById("religious_level3_result").innerHTML = " ";
   document.querySelectorAll('input[type=radio]:checked').forEach(radio => radio.checked = false);
-  document.getElementById("religious_level3_nextlevel").disabled = true;
   religious_result -= religious_l3_result;
   religious_l3_result = 0;;
 }
