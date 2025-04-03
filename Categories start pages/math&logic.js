@@ -8,6 +8,7 @@ let math_result = 0;
 let math_l1_result = 0;
 let math_l2_result = 0;
 let math_l3_result = 0;
+
 function math_level1_submit(){
   math_l1_result = 0;
   let q1 = document.querySelector('input[name=q1]:checked');
@@ -108,7 +109,7 @@ function math_level1_submit(){
   if (q5 == q5_3) {
     math_l1_result += 1;
     document.getElementById("q5_3_p").innerHTML = "&#x2713;";
-}
+  }
   if (q5 == q5_4) {
     math_l1_result += 0;
     document.getElementById("q5_4_p").innerHTML = "&#x2715;";
@@ -192,7 +193,7 @@ function math_level1_nextlevel(){
 }
 
 
-//math Level 2
+//Math Level 2
 function math_level2_submit(){
   math_l2_result = 0;
   let q8 = document.querySelector('input[name=q8]:checked');
@@ -377,7 +378,7 @@ function math_level2_nextlevel(){
 }
 
 
-//math Level 3
+//Math Level 3
 function math_level3_submit(){
   math_l3_result = 0;
   let q15 = document.querySelector('input[name=q15]:checked');
@@ -504,9 +505,8 @@ function math_level3_submit(){
     math_l3_result += 0;
     document.getElementById("q20_4_p").innerHTML = "&#x2715;";
     document.getElementById("q20_3_p").innerHTML = "&#x2713;";
-  }
-
-
+  } 
+  
   let q21 = document.querySelector('input[name=q21]:checked');
   if (q21 == q21_1) {
     math_l3_result += 0;
@@ -531,10 +531,10 @@ function math_level3_submit(){
   math_result += math_l3_result;
 
   if (math_l3_result < 3) {
-    document.getElementById("math_level3_result").innerHTML = "Your score of level 1 is <b style='text-shadow:0 0 20px black;'>" + math_l3_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + math_result + "</b> out of 21. You failed the level. You can't go to the next level. Please try again.";
+    document.getElementById("math_level3_result").innerHTML = "Your score of level 3 is <b style='text-shadow:0 0 20px black;'>" + math_l3_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + math_result + "</b> out of 21. You failed the level. You can't go to the next level. Please try again.";
   }
   if (math_l3_result >= 3) {
-    document.getElementById("math_level3_result").innerHTML = "Your score of level 1 is <b style='text-shadow:0 0 20px black;'>" + math_l3_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + math_result + "</b> out of 21. You passed the level. You can go to the next level.";
+    document.getElementById("math_level3_result").innerHTML = "Your score of level 3 is <b style='text-shadow:0 0 20px black;'>" + math_l3_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + math_result + "</b> out of 21. You passed the level. You can go to the next level.";
   }
 }
 
@@ -546,7 +546,6 @@ function math_level3_reset(){
   };
   document.getElementById("math_level3_result").innerHTML = " ";
   document.querySelectorAll('input[type=radio]:checked').forEach(radio => radio.checked = false);
-  document.getElementById("math_level3_nextlevel").disabled = true;
   math_result -= math_l3_result;
   math_l3_result = 0;;
 }
