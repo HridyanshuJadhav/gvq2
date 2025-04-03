@@ -530,7 +530,6 @@ function funny_level3_submit(){
 
   funny_result += funny_l3_result;
 
-
   if (funny_l3_result < 3) {
     document.getElementById("funny_level3_result").innerHTML = "Your score of level 3 is <b style='text-shadow:0 0 20px black;'>" + funny_l3_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + funny_result + "</b> out of 21. You failed the level. You can't go to the next level. Please try again.";
   }
