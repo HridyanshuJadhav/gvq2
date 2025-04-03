@@ -25,7 +25,6 @@ body {
 }
 
 #navp1 {
-
     text-align: center;
     font-weight: bold;
 }
@@ -35,7 +34,6 @@ body {
     font-size: 15px;
     display: flex;
     justify-content: space-evenly;
-
 }
 
 #gvq-logo {
@@ -135,35 +133,15 @@ body {
     }
 }
 
-#home-btn {
-    background-color: white;
-    margin-top: 60px;
-    justify-self: center;
-    padding: 1% 2% 1% 2%;
-    border: none;
-    border-radius: 5px;
-    color: black;
-    display: block;
-}
-
-#home-btn-a {
+##home-btn-a {
     text-decoration: none;
     color: black;
     position: relative;
-    animation: homebutton;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
+    animation: homebutton 3s forwards infinite;
 }
 
 #home-btn-a:hover {
     color: white;
-}
-
-#home-btn:hover {
-    background-color: #ff5722;
-    color: white;
-    transform: scale(1.1);
 }
 
 @keyframes homebutton {
@@ -178,6 +156,23 @@ body {
     100% {
         top: 90px;
     }
+}
+
+home-btn {
+    background-color: white;
+    margin-top: 60px;
+    justify-self: center;
+    padding: 1% 2% 1% 2%;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    display: block;
+}
+
+#home-btn:hover {
+    background-color: #ff5722;
+    color: white;
+    transform: scale(1.1);
 }
 
 #home-confetti-div {
@@ -254,8 +249,6 @@ footer {
 #home-footer {
     bottom: 0;
 }
-
-
 
 @media only screen and (max-width: 860px) {
     #gvq-logo {
@@ -668,7 +661,6 @@ footer {
 }
 
 @media only screen and (max-width: 344px) {
-
     #contactus-p,
     #contactus-div input,
     #contactus-div textarea {
@@ -719,7 +711,6 @@ footer {
 }
 
 @media only screen and (max-width: 344px) {
-
     #feedback-p,
     #feedback-div input,
     #feedback-div textarea {
@@ -784,14 +775,6 @@ footer {
     line-height: 30px;
 }
 
-#signup-div2 {
-    background-color: white;
-    height: 31rem;
-    border-radius: 16px;
-    margin-top: -55px;
-    box-shadow: -1px -1px 80px 1px gray;
-}
-
 #signup-div1 {
     background-color: whitesmoke;
     width: 40%;
@@ -800,11 +783,12 @@ footer {
     padding-right: 35px;
 }
 
-#signup-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding-bottom: 30px;
+#signup-div2 {
+    background-color: white;
+    height: 31rem;
+    border-radius: 16px;
+    margin-top: -55px;
+    box-shadow: -1px -1px 80px 1px gray;
 }
 
 #signup-h2 {
@@ -814,6 +798,13 @@ footer {
     padding-top: 25px;
     font-weight: 400px;
     color: black;
+}
+
+#signup-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
 }
 
 #signup-form input {
@@ -859,7 +850,6 @@ footer {
     font-size: large;
     text-decoration: none;
     color: #ff5722;
-
 }
 
 #signup-bottomtext p {
@@ -907,7 +897,6 @@ footer {
 }
 
 @media only screen and (max-width: 460px) {
-
     #signup_body #loader-maindiv {
         margin-top: 0;
     }
@@ -980,13 +969,6 @@ footer {
     line-height: 30px;
 }
 
-#login-div2 {
-    background-color: white;
-    height: 23rem;
-    border-radius: 16px;
-    box-shadow: -1px -1px 80px 1px gray;
-}
-
 #login-div1 {
     background-color: whitesmoke;
     width: 40%;
@@ -995,11 +977,11 @@ footer {
     padding-right: 35px;
 }
 
-#login-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding-bottom: 30px;
+#login-div2 {
+    background-color: white;
+    height: 23rem;
+    border-radius: 16px;
+    box-shadow: -1px -1px 80px 1px gray;
 }
 
 #login-h2 {
@@ -1009,6 +991,13 @@ footer {
     padding-top: 25px;
     font-weight: 400px;
     color: black;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
 }
 
 #login-form input {
@@ -1101,7 +1090,6 @@ footer {
 }
 
 @media only screen and (max-width: 460px) {
-
     #login_body #loader-maindiv {
         margin-top: 0;
     }
@@ -1195,7 +1183,7 @@ footer {
     border: 1px solid #c9c9c9;
 }
 
-#pd-div1 button {
+#pd-logout {
     background: #ff5722;
     font-size: 16px;
     color: white;
@@ -1211,8 +1199,8 @@ footer {
 }
 
 /* START CATEGORY SECTION*/
-a:active {
-    text-decoration: none;
+#startcategory-h2 {
+    margin-top: 105px;
 }
 
 #startcategory-div1 {
@@ -1224,10 +1212,6 @@ a:active {
     margin: 1rem auto;
     padding-bottom: 30px;
     width: fit content;
-}
-
-#startcategory-h2 {
-    margin-top: 105px;
 }
 
 #startcategory {
@@ -1337,7 +1321,6 @@ a:active {
 }
 
 @media only screen and (max-width: 360px) {
-
     .level_submit,
     .level_save,
     .level_reset,
@@ -1768,7 +1751,6 @@ a:active {
     display: inline;
     color: red;
 }
-
 
 /* Space and astrology category section */
 #space_and_astrology-question-div1 #q1_3_p,
