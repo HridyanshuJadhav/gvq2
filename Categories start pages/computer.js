@@ -8,6 +8,7 @@ let computer_result = 0;
 let computer_l1_result = 0;
 let computer_l2_result = 0;
 let computer_l3_result = 0;
+
 function computer_level1_submit(){
   computer_l1_result = 0;
   let q1 = document.querySelector('input[name=q1]:checked');
@@ -192,7 +193,7 @@ function computer_level1_nextlevel(){
 }
 
 
-//computer Level 2
+//Computer Level 2
 function computer_level2_submit(){
   computer_l2_result = 0;
   let q8 = document.querySelector('input[name=q8]:checked');
@@ -377,7 +378,7 @@ function computer_level2_nextlevel(){
 }
 
 
-//computer Level 3
+//Computer Level 3
 function computer_level3_submit(){
   computer_l3_result = 0;
   let q15 = document.querySelector('input[name=q15]:checked');
@@ -530,10 +531,10 @@ function computer_level3_submit(){
   computer_result += computer_l3_result;
 
   if (computer_l3_result < 3) {
-    document.getElementById("computer_level3_result").innerHTML = "Your score of level 1 is <b style='text-shadow:0 0 20px black;'>" + computer_l3_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + computer_result + "</b> out of 21. You failed the level. You can't go to the next level. Please try again.";
+    document.getElementById("computer_level3_result").innerHTML = "Your score of level 3 is <b style='text-shadow:0 0 20px black;'>" + computer_l3_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + computer_result + "</b> out of 21. You failed the level. You can't go to the next level. Please try again.";
   }
   if (computer_l3_result >= 3) {
-    document.getElementById("computer_level3_result").innerHTML = "Your score of level 1 is <b style='text-shadow:0 0 20px black;'>" + computer_l3_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + computer_result + "</b> out of 21. You passed the level. You can go to the next level.";
+    document.getElementById("computer_level3_result").innerHTML = "Your score of level 3 is <b style='text-shadow:0 0 20px black;'>" + computer_l3_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + computer_result + "</b> out of 21. You passed the level. You can go to the next level.";
   }
 }
 
@@ -545,7 +546,6 @@ function computer_level3_reset(){
   };
   document.getElementById("computer_level3_result").innerHTML = " ";
   document.querySelectorAll('input[type=radio]:checked').forEach(radio => radio.checked = false);
-  document.getElementById("computer_level3_nextlevel").disabled = true;
   computer_result -= computer_l3_result;
   computer_l3_result = 0;;
 }
