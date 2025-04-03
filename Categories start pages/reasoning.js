@@ -8,6 +8,7 @@ let reasoning_result = 0;
 let reasoning_l1_result = 0;
 let reasoning_l2_result = 0;
 let reasoning_l3_result = 0;
+
 function reasoning_level1_submit(){
   reasoning_l1_result = 0;
   let q1 = document.querySelector('input[name=q1]:checked');
@@ -192,7 +193,7 @@ function reasoning_level1_nextlevel(){
 }
 
 
-//reasoning Level 2
+//Reasoning Level 2
 function reasoning_level2_submit(){
   reasoning_l2_result = 0;
   let q8 = document.querySelector('input[name=q8]:checked');
@@ -377,8 +378,7 @@ function reasoning_level2_nextlevel(){
 }
 
 
-
-//reasoning Level 3
+//Reasoning Level 3
 function reasoning_level3_submit(){
   reasoning_l3_result = 0;
   let q15 = document.querySelector('input[name=q15]:checked');
@@ -546,7 +546,6 @@ function reasoning_level3_reset(){
   };
   document.getElementById("reasoning_level3_result").innerHTML = " ";
   document.querySelectorAll('input[type=radio]:checked').forEach(radio => radio.checked = false);
-  document.getElementById("reasoning_level3_nextlevel").disabled = true;
   reasoning_result -= reasoning_l3_result;
   reasoning_l3_result = 0;;
 }
