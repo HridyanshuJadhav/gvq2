@@ -534,7 +534,7 @@ function math_level3_submit(){
     document.getElementById("math_level3_result").innerHTML = "Your score of level 3 is <b style='text-shadow:0 0 20px black;'>" + math_l3_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + math_result + "</b> out of 21. You failed the level. Please try again.";
   }
   if (math_l3_result >= 3) {
-    document.getElementById("math_level3_result").innerHTML = "Your score of level 3 is <b style='text-shadow:0 0 20px black;'>" + math_l3_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + math_result + "</b> out of 21. You passed the level.;
+    document.getElementById("math_level3_result").innerHTML = "Your score of level 3 is <b style='text-shadow:0 0 20px black;'>" + math_l3_result + "</b> out of 7 and your total score is <b style='text-shadow:0 0 20px black;'>" + math_result + "</b> out of 21. You passed the level. You can go to the next level.";
   }
 }
 
