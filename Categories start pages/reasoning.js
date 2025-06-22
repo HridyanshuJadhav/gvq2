@@ -1,4 +1,4 @@
-document.getElementById("reasoning-question-div2").hidden = true;a
+document.getElementById("reasoning-question-div2").hidden = true;
 document.getElementById("reasoning-question-div3").hidden = true;
 
 document.getElementById("reasoning_level1_nextlevel").disabled = true;
